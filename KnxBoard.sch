@@ -92,8 +92,8 @@ U 1 1 5EE7975A
 P 2600 1200
 F 0 "R1" H 2670 1246 50  0000 L CNN
 F 1 "100R" H 2670 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 1200 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW0603100RFKEAC?qs=sGAEpiMZZMvdGkrng054t0DrEhLhGh8gD13mKavhucb20%2FizL9tlHg%3D%3D" H 2600 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 1200 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW0402100RFKEDC?qs=sGAEpiMZZMvdGkrng054t0DrEhLhGh8gJaf4W6KCPV2ghVtyILDy9w%3D%3D" H 2600 1200 50  0001 C CNN
 F 4 "0.09" H 2600 1200 50  0001 C CNN "Price"
 	1    2600 1200
 	1    0    0    -1  
