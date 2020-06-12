@@ -30,9 +30,11 @@ L Device:C C17
 U 1 1 5EC6D407
 P 3550 1250
 F 0 "C17" H 3665 1296 50  0000 L CNN
-F 1 "100uF" H 3665 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3588 1100 50  0001 C CNN
-F 3 "3.3V" H 3550 1250 50  0001 C CNN
+F 1 "47uF" H 3665 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3588 1100 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LMK212BBJ476MG-T?qs=sGAEpiMZZMvsSlwiRhF8qqz126ahU0Dj1uiGAU4j4%2FSwQwkmd0IxEg%3D%3D" H 3550 1250 50  0001 C CNN
+F 4 "3.3V" H 3550 1250 50  0001 C CNN "Rating"
+F 5 "0.82" H 3550 1250 50  0001 C CNN "Price"
 	1    3550 1250
 	1    0    0    -1  
 $EndComp
@@ -43,24 +45,22 @@ P 4050 1250
 F 0 "C14" H 4165 1296 50  0000 L CNN
 F 1 "100nF" H 4165 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 1100 50  0001 C CNN
-F 3 "3.3V" H 4050 1250 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/AVX/06035G104ZAT2A?qs=sGAEpiMZZMvsSlwiRhF8qtXiuYMmFthM6IJ8r2mw%252BQI%3D" H 4050 1250 50  0001 C CNN
+F 4 "3.3V" H 4050 1250 50  0001 C CNN "Rating"
+F 5 "0.09" H 4050 1250 50  0001 C CNN "Price"
 	1    4050 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 1100 4450 1900
-Wire Wire Line
-	4550 1900 4550 1100
 Text HLabel 900  1100 0    50   Input ~ 0
 VDD_3.3V
 Wire Wire Line
 	4450 1100 4550 1100
 Connection ~ 4450 1100
 $Comp
-L power:+3V3 #PWR0105
+L power:+3V3 #PWR3.3V0104
 U 1 1 5EC7DA8A
 P 3800 1100
-F 0 "#PWR0105" H 3800 950 50  0001 C CNN
+F 0 "#PWR3.3V0104" H 3800 950 50  0001 C CNN
 F 1 "+3V3" H 3815 1273 50  0000 C CNN
 F 2 "" H 3800 1100 50  0001 C CNN
 F 3 "" H 3800 1100 50  0001 C CNN
@@ -101,9 +101,12 @@ L Device:L L2
 U 1 1 5EC8F987
 P 4650 1500
 F 0 "L2" H 4703 1546 50  0000 L CNN
-F 1 "10uH" H 4703 1455 50  0000 L CNN
-F 2 "Inductor_SMD:L_1210_3225Metric" H 4650 1500 50  0001 C CNN
-F 3 "225mA" H 4650 1500 50  0001 C CNN
+F 1 "33uH" H 4703 1455 50  0000 L CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-40xx" H 4650 1500 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/?qs=PzICbMaShUcIK8Guk0jpFw%3D%3D" H 4650 1500 50  0001 C CNN
+F 4 "Ir > 150mA Isat > 550mA" H 4650 1500 50  0001 C CNN "Rating"
+F 5 "0.41" H 4650 1500 50  0001 C CNN "Price"
+F 6 "L" H 4650 1500 50  0001 C CNN "STKNX"
 	1    4650 1500
 	1    0    0    -1  
 $EndComp
@@ -112,8 +115,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 1100 4650 1350
 Connection ~ 4550 1100
-Wire Wire Line
-	4650 1650 4650 1900
 Text HLabel 5050 2100 2    50   BiDi ~ 0
 PA0
 Text HLabel 5050 2200 2    50   BiDi ~ 0
@@ -166,7 +167,9 @@ P 2750 2300
 F 0 "C24" H 2865 2346 50  0000 L CNN
 F 1 "100nF" H 2865 2255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2788 2150 50  0001 C CNN
-F 3 "3.3V" H 2750 2300 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/AVX/06035G104ZAT2A?qs=sGAEpiMZZMvsSlwiRhF8qtXiuYMmFthM6IJ8r2mw%252BQI%3D" H 2750 2300 50  0001 C CNN
+F 4 "3.3V" H 2750 2300 50  0001 C CNN "Rating"
+F 5 "0.09" H 2750 2300 50  0001 C CNN "Price"
 	1    2750 2300
 	1    0    0    -1  
 $EndComp
@@ -231,8 +234,6 @@ Wire Wire Line
 Connection ~ 2550 3800
 Wire Wire Line
 	900  1100 2200 1100
-Wire Wire Line
-	2200 2400 2200 2300
 Connection ~ 2200 1100
 Wire Wire Line
 	2200 1100 3550 1100
@@ -240,7 +241,6 @@ Wire Wire Line
 	2000 2400 2000 2300
 Wire Wire Line
 	2000 2300 2200 2300
-Connection ~ 2200 2300
 Wire Wire Line
 	2200 2300 2200 1100
 Text HLabel 4050 2800 0    50   BiDi ~ 0
@@ -270,4 +270,13 @@ Text HLabel 3200 2000 1    50   Input ~ 0
 Reset
 Wire Wire Line
 	3200 2000 3200 2100
+Wire Wire Line
+	2200 2300 2200 2400
+Connection ~ 2200 2300
+Wire Wire Line
+	4650 1650 4650 1900
+Wire Wire Line
+	4550 1100 4550 1900
+Wire Wire Line
+	4450 1100 4450 1900
 $EndSCHEMATC
