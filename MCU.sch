@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -116,25 +116,19 @@ Wire Wire Line
 Wire Wire Line
 	4650 1100 4650 1350
 Connection ~ 4550 1100
-Text HLabel 5050 2100 2    50   BiDi ~ 0
-PA0
-Text HLabel 5050 2200 2    50   BiDi ~ 0
-PA1
 Text HLabel 5050 2300 2    50   Output ~ 0
 UART_TX
 Text HLabel 5050 2400 2    50   BiDi ~ 0
 PA3
 Text HLabel 5050 2500 2    50   BiDi ~ 0
 PA4
-Text HLabel 5050 2600 2    50   BiDi ~ 0
-PA5
 Text HLabel 5050 2700 2    50   BiDi ~ 0
 PA6
 Text HLabel 5050 2800 2    50   BiDi ~ 0
 PA7
-Text HLabel 5050 2900 2    50   Input ~ 0
+Text HLabel 5700 2600 2    50   Input ~ 0
 KNX_RX
-Text HLabel 5050 3000 2    50   Output ~ 0
+Text HLabel 5050 2200 2    50   Output ~ 0
 KNX_TX
 Text HLabel 5050 3100 2    50   Input ~ 0
 KNX_OK
@@ -208,44 +202,24 @@ PB1
 Text HLabel 4050 3000 0    50   BiDi ~ 0
 PB0
 $Comp
-L Oscillator:SG-3030CM X1
+L Oscillator:SG-210STF X1
 U 1 1 5EC9AF36
-P 2100 2700
-F 0 "X1" H 1871 2746 50  0000 R CNN
-F 1 "SG-3030CM" H 1871 2655 50  0000 R CNN
-F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG3030CM" H 2100 2350 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Epson-Timing/SG-3030CM-327680KBROHS?qs=sFmtmVcT%2FfvMvdzcXdd8BQ%3D%3D" H 2000 2700 50  0001 C CNN
-F 4 "1.32" H 2100 2700 50  0001 C CNN "Price"
-	1    2100 2700
+P 6350 1700
+F 0 "X1" H 6121 1746 50  0000 R CNN
+F 1 "SG-210STF 32.0000ML3 " H 6121 1655 50  0000 R CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm" H 6350 1350 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Epson-Timing/SG-210STF-320000ML3/?qs=6J2kD0vu%2F2VsxDrGZldqTg%3D%3D" H 6250 1700 50  0001 C CNN
+F 4 "0.98" H 6350 1700 50  0001 C CNN "Price"
+	1    6350 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 2700 2400 2700
-Wire Wire Line
-	2550 2500 2550 3000
-Wire Wire Line
-	2550 3000 2100 3000
 Connection ~ 2550 2500
-Wire Wire Line
-	2550 3800 2550 3000
 Connection ~ 4450 3800
 Wire Wire Line
 	4450 3800 2550 3800
-Connection ~ 2550 3000
 Wire Wire Line
 	900  3800 2550 3800
 Connection ~ 2550 3800
-Wire Wire Line
-	900  1100 2200 1100
-Connection ~ 2200 1100
-Wire Wire Line
-	2200 1100 3550 1100
-Wire Wire Line
-	2000 2400 2000 2300
-Wire Wire Line
-	2000 2300 2200 2300
-Wire Wire Line
-	2200 2300 2200 1100
 Text HLabel 4050 2800 0    50   BiDi ~ 0
 PC15
 Wire Wire Line
@@ -275,12 +249,50 @@ Reset
 Wire Wire Line
 	3200 2000 3200 2100
 Wire Wire Line
-	2200 2300 2200 2400
-Connection ~ 2200 2300
-Wire Wire Line
 	4650 1650 4650 1900
 Wire Wire Line
 	4550 1100 4550 1900
 Wire Wire Line
 	4450 1100 4450 1900
+Text HLabel 5050 2900 2    50   BiDi ~ 0
+PA8
+Wire Wire Line
+	5050 3000 5500 3000
+Wire Wire Line
+	5500 3000 5500 2600
+Wire Wire Line
+	5500 2600 5700 2600
+Wire Wire Line
+	5000 2600 5050 2600
+Connection ~ 5500 2600
+Connection ~ 5050 2600
+Wire Wire Line
+	5050 2600 5500 2600
+Wire Wire Line
+	900  1100 3550 1100
+Wire Wire Line
+	2550 2500 2550 3800
+Connection ~ 4650 1100
+Wire Wire Line
+	6350 3800 6350 2000
+Connection ~ 4650 3800
+Wire Wire Line
+	4650 3800 6350 3800
+Wire Wire Line
+	5050 2100 6900 2100
+Wire Wire Line
+	6900 2100 6900 1700
+Wire Wire Line
+	6900 1700 6650 1700
+Wire Wire Line
+	4650 1100 5750 1100
+Wire Wire Line
+	6350 1400 6350 1100
+Wire Wire Line
+	6050 1700 5750 1700
+Wire Wire Line
+	5750 1700 5750 1100
+Connection ~ 5750 1100
+Wire Wire Line
+	5750 1100 6350 1100
 $EndSCHEMATC
