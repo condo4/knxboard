@@ -229,8 +229,8 @@ U 1 1 6186BB40
 P 5800 3350
 F 0 "C6" H 5850 3250 50  0000 L CNN
 F 1 "100nF 6.3V" H 5915 3305 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5838 3200 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05B104KQ5NNNC?qs=sGAEpiMZZMvsSlwiRhF8qgRqqbZZ6yqB0z3c2XTK6uY%3D" H 5800 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 3200 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 5800 3350 50  0001 C CNN
 F 4 "0.085" H 5800 3350 50  0001 C CNN "Price"
 	1    5800 3350
 	1    0    0    -1  
@@ -272,8 +272,8 @@ U 1 1 6186F111
 P 2650 2300
 F 0 "C5" V 2700 2400 50  0000 C CNN
 F 1 "100nF 6.3V" V 2489 2300 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2688 2150 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05B104KQ5NNNC?qs=sGAEpiMZZMvsSlwiRhF8qgRqqbZZ6yqB0z3c2XTK6uY%3D" H 2650 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 2150 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 2650 2300 50  0001 C CNN
 F 4 "0.085" H 2650 2300 50  0001 C CNN "Price"
 	1    2650 2300
 	-1   0    0    1   
@@ -356,10 +356,10 @@ L Device:R R4
 U 1 1 6187C9A4
 P 2900 4750
 F 0 "R4" H 2830 4750 50  0000 R CNN
-F 1 "67.7K 1/16w" V 2784 4750 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2830 4750 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/RT0402DRD0765K7L?qs=sGAEpiMZZMvdGkrng054t3BBvhlgtHH%252BtjKzUSY4INg%3D" H 2900 4750 50  0001 C CNN
-F 4 "0.229" H 2900 4750 50  0001 C CNN "Price"
+F 1 "56K 1/16w" V 2784 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4750 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C5602FP500?qs=sGAEpiMZZMvdGkrng054txcf3av6vnC8XzTnB3mS7jw%3D" H 2900 4750 50  0001 C CNN
+F 4 "0.08" H 2900 4750 50  0001 C CNN "Price"
 	1    2900 4750
 	-1   0    0    1   
 $EndComp
@@ -368,10 +368,10 @@ L Device:R R5
 U 1 1 6187D49C
 P 2900 5250
 F 0 "R5" H 2830 5250 50  0000 R CNN
-F 1 "590K 1/16w" V 2784 5250 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2830 5250 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/RC0402FR-7W590KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4Lzj7x5DDUO50HtiNtLvpmoRg%3D%3D" H 2900 5250 50  0001 C CNN
-F 4 "0.085" H 2900 5250 50  0001 C CNN "Price"
+F 1 "499K 1/16w" V 2784 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5250 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C4993FP500?qs=8lczJKL2ryeXiIiBeB6JCA%3D%3D" H 2900 5250 50  0001 C CNN
+F 4 "0.102" H 2900 5250 50  0001 C CNN "Price"
 	1    2900 5250
 	-1   0    0    1   
 $EndComp
@@ -404,9 +404,9 @@ U 1 1 61893132
 P 3350 4850
 F 0 "R3" H 3300 4800 50  0000 R CNN
 F 1 "1R 1/16W" V 3234 4850 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 4850 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/RC0402JR-7W1RL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzmTZ%252BszbcK0CwSPwirxw0Ig%3D%3D" H 3350 4850 50  0001 C CNN
-F 4 "0.085" H 3350 4850 50  0001 C CNN "Price"
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4850 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW06031R00JNEC?qs=sGAEpiMZZMvdGkrng054t8tsKUCh5%2FbY4AhBMsyzAQQ%3D" H 3350 4850 50  0001 C CNN
+F 4 "0.008" H 3350 4850 50  0001 C CNN "Price"
 	1    3350 4850
 	-1   0    0    1   
 $EndComp
@@ -472,9 +472,9 @@ U 1 1 618A5F60
 P 3950 4850
 F 0 "R2" H 3950 4700 50  0000 R CNN
 F 1 "1R 1/16W" V 3834 4850 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3880 4850 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/RC0402JR-7W1RL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzmTZ%252BszbcK0CwSPwirxw0Ig%3D%3D" H 3950 4850 50  0001 C CNN
-F 4 "0.085" H 3950 4850 50  0001 C CNN "Price"
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 4850 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW06031R00JNEC?qs=sGAEpiMZZMvdGkrng054t8tsKUCh5%2FbY4AhBMsyzAQQ%3D" H 3950 4850 50  0001 C CNN
+F 4 "0.008" H 3950 4850 50  0001 C CNN "Price"
 	1    3950 4850
 	-1   0    0    1   
 $EndComp
@@ -550,8 +550,8 @@ U 1 1 618DAA47
 P 3550 1450
 F 0 "C8" V 3600 1550 50  0000 C CNN
 F 1 "10pF 6.3V" V 3389 1450 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3588 1300 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05C100JB5NNND?qs=sGAEpiMZZMvsSlwiRhF8qtsGU%2FCnaNeQ66S3DVI%2F3ncF6iPW2vLKAA%3D%3D" H 3550 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3588 1300 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10C100JB8NNND?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNW3qxrQ2K0NU%3D" H 3550 1450 50  0001 C CNN
 F 4 "0.085" H 3550 1450 50  0001 C CNN "Price"
 	1    3550 1450
 	1    0    0    -1  
@@ -562,8 +562,8 @@ U 1 1 618DFD93
 P 3850 1450
 F 0 "C9" V 3900 1550 50  0000 C CNN
 F 1 "10pF 6.3V" V 3689 1450 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3888 1300 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05C100JB5NNND?qs=sGAEpiMZZMvsSlwiRhF8qtsGU%2FCnaNeQ66S3DVI%2F3ncF6iPW2vLKAA%3D%3D" H 3850 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 1300 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10C100JB8NNND?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNW3qxrQ2K0NU%3D" H 3850 1450 50  0001 C CNN
 F 4 "0.085" H 3850 1450 50  0001 C CNN "Price"
 	1    3850 1450
 	1    0    0    -1  
@@ -679,8 +679,8 @@ U 1 1 619333DE
 P 7100 3100
 F 0 "C20" H 7150 3000 50  0000 L CNN
 F 1 "100nF 6.3V" H 7215 3055 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7138 2950 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05B104KQ5NNNC?qs=sGAEpiMZZMvsSlwiRhF8qgRqqbZZ6yqB0z3c2XTK6uY%3D" H 7100 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 2950 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 7100 3100 50  0001 C CNN
 F 4 "0.085" H 7100 3100 50  0001 C CNN "Price"
 	1    7100 3100
 	1    0    0    -1  
@@ -714,8 +714,8 @@ U 1 1 6193D876
 P 7750 3300
 F 0 "R20" V 7635 3300 50  0000 C CNN
 F 1 "10K 1/16w" V 7634 3300 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7680 3300 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/AC0402FR-0710KL?qs=sGAEpiMZZMvdGkrng054t1dXgLbs7QPXqM4ukGPhfK4%3D" H 7750 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 3300 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMvdGkrng054t%252B7N8nKX0VXe%2FafJHKs0Nqw%3D" H 7750 3300 50  0001 C CNN
 F 4 "0.085" H 7750 3300 50  0001 C CNN "Price"
 	1    7750 3300
 	0    1    1    0   
@@ -770,8 +770,8 @@ U 1 1 6198BBBC
 P 8050 2250
 F 0 "C21" H 8100 2150 50  0000 L CNN
 F 1 "100nF 6.3V" H 8165 2205 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8088 2100 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05B104KQ5NNNC?qs=sGAEpiMZZMvsSlwiRhF8qgRqqbZZ6yqB0z3c2XTK6uY%3D" H 8050 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8088 2100 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 8050 2250 50  0001 C CNN
 F 4 "0.085" H 8050 2250 50  0001 C CNN "Price"
 	1    8050 2250
 	1    0    0    -1  
@@ -819,9 +819,9 @@ U 1 1 619A8084
 P 7500 4000
 F 0 "R21" V 7385 4000 50  0000 C CNN
 F 1 "100R" V 7384 4000 50  0001 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7430 4000 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/YAGEO/RC0402FR-7W100RL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzB6DhCpshsTqMLDuSYo8aVg%3D%3D" H 7500 4000 50  0001 C CNN
-F 4 "0.085" H 7500 4000 50  0001 C CNN "Price"
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 4000 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C1000FP500?qs=sGAEpiMZZMvdGkrng054t%252B7APogc7nBOr0El19B1Nr8%3D" H 7500 4000 50  0001 C CNN
+F 4 "0.075" H 7500 4000 50  0001 C CNN "Price"
 	1    7500 4000
 	0    1    1    0   
 $EndComp
@@ -872,8 +872,8 @@ U 1 1 619C32B3
 P 9600 2400
 F 0 "C23" H 9650 2300 50  0000 L CNN
 F 1 "100nF 6.3V" H 9715 2355 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 9638 2250 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL05B104KQ5NNNC?qs=sGAEpiMZZMvsSlwiRhF8qgRqqbZZ6yqB0z3c2XTK6uY%3D" H 9600 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9638 2250 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 9600 2400 50  0001 C CNN
 F 4 "0.085" H 9600 2400 50  0001 C CNN "Price"
 	1    9600 2400
 	1    0    0    -1  
@@ -958,13 +958,13 @@ Wire Wire Line
 	9050 4300 9300 4300
 Wire Wire Line
 	9050 4200 9300 4200
-Text GLabel 10850 4450 0    50   Input ~ 0
+Text GLabel 10850 4350 0    50   Input ~ 0
 SWCLK
 Text GLabel 10850 4550 0    50   Input ~ 0
 SWDIO
-Text GLabel 10850 4650 0    50   Input ~ 0
-TXD
 Text GLabel 10850 4750 0    50   Input ~ 0
+TXD
+Text GLabel 10850 4850 0    50   Input ~ 0
 RXD
 Text GLabel 9300 3100 2    50   Input ~ 0
 UART_TX
@@ -974,9 +974,9 @@ Wire Wire Line
 	9050 3100 9300 3100
 Wire Wire Line
 	9050 4400 9300 4400
-Text GLabel 10850 4350 0    50   Input ~ 0
+Text GLabel 10850 4450 0    50   Input ~ 0
 UART_TX
-Text GLabel 10850 4250 0    50   Input ~ 0
+Text GLabel 10850 4150 0    50   Input ~ 0
 UART_RX
 NoConn ~ 3250 2600
 NoConn ~ 4500 3800
@@ -1035,23 +1035,23 @@ Text GLabel 9300 3200 2    50   Input ~ 0
 PA3
 Text GLabel 9300 3000 2    50   Input ~ 0
 PA1
-Text GLabel 10750 3500 0    50   Input ~ 0
+Text GLabel 10750 1500 0    50   Input ~ 0
 PA8
-Text GLabel 10750 3400 0    50   Input ~ 0
-PA7
 Text GLabel 10750 3300 0    50   Input ~ 0
-PA6
+PA7
 Text GLabel 10750 3200 0    50   Input ~ 0
-PA5
+PA6
 Text GLabel 10750 3100 0    50   Input ~ 0
-PA4
+PA5
 Text GLabel 10750 3000 0    50   Input ~ 0
-PA3
+PA4
 Text GLabel 10750 2900 0    50   Input ~ 0
-UART_TX
+PA3
 Text GLabel 10750 2800 0    50   Input ~ 0
-PA1
+UART_TX
 Text GLabel 10750 2700 0    50   Input ~ 0
+PA1
+Text GLabel 10750 2600 0    50   Input ~ 0
 CLK16
 Wire Wire Line
 	9050 3700 9300 3700
@@ -1069,13 +1069,11 @@ Wire Wire Line
 	9050 3000 9300 3000
 Text GLabel 9750 4650 2    50   Input ~ 0
 PA11
-Text GLabel 10750 2600 0    50   Input ~ 0
-PA11
 Text GLabel 7100 2450 2    50   Input ~ 0
 NRST
-Text GLabel 10850 4150 0    50   Input ~ 0
+Text GLabel 10850 4250 0    50   Input ~ 0
 NRST
-Text GLabel 10750 2500 0    50   Input ~ 0
+Text GLabel 10750 1700 0    50   Input ~ 0
 NRST
 Text GLabel 8050 4400 0    50   Input ~ 0
 PB7
@@ -1119,25 +1117,25 @@ F 3 "" H 10750 1000 50  0001 C CNN
 	1    10750 1000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10750 1300 0    50   Input ~ 0
+Text GLabel 10750 2400 0    50   Input ~ 0
 PC14
-Text GLabel 10750 1400 0    50   Input ~ 0
+Text GLabel 10750 2500 0    50   Input ~ 0
 PC15
-Text GLabel 10750 1500 0    50   Input ~ 0
+Text GLabel 10750 3400 0    50   Input ~ 0
 PB0
 Text GLabel 10750 1600 0    50   Input ~ 0
 PB1
-Text GLabel 10750 1700 0    50   Input ~ 0
+Text GLabel 10750 1400 0    50   Input ~ 0
 Led
-Text GLabel 10750 1800 0    50   Input ~ 0
-PB4
-Text GLabel 10750 1900 0    50   Input ~ 0
-PB5
-Text GLabel 10750 2000 0    50   Input ~ 0
-PB6
 Text GLabel 10750 2100 0    50   Input ~ 0
+PB4
+Text GLabel 10750 2000 0    50   Input ~ 0
+PB5
+Text GLabel 10750 1900 0    50   Input ~ 0
+PB6
+Text GLabel 10750 1800 0    50   Input ~ 0
 PB7
-Text GLabel 10750 2400 0    50   Input ~ 0
+Text GLabel 10750 1300 0    50   Input ~ 0
 Prog
 $Comp
 L Connector:Conn_01x02_Male J4
@@ -1175,23 +1173,23 @@ Wire Wire Line
 $Comp
 L power:VDD #PWR0120
 U 1 1 61915F52
-P 10850 4850
-F 0 "#PWR0120" H 10850 4700 50  0001 C CNN
-F 1 "VDD" V 10865 5023 50  0000 C CNN
-F 2 "" H 10850 4850 50  0001 C CNN
-F 3 "" H 10850 4850 50  0001 C CNN
-	1    10850 4850
+P 10850 3950
+F 0 "#PWR0120" H 10850 3800 50  0001 C CNN
+F 1 "VDD" V 10865 4123 50  0000 C CNN
+F 2 "" H 10850 3950 50  0001 C CNN
+F 3 "" H 10850 3950 50  0001 C CNN
+	1    10850 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VDD #PWR0121
 U 1 1 619174D7
-P 10750 1200
-F 0 "#PWR0121" H 10750 1050 50  0001 C CNN
-F 1 "VDD" V 10765 1373 50  0000 C CNN
-F 2 "" H 10750 1200 50  0001 C CNN
-F 3 "" H 10750 1200 50  0001 C CNN
-	1    10750 1200
+P 10750 3500
+F 0 "#PWR0121" H 10750 3350 50  0001 C CNN
+F 1 "VDD" V 10765 3673 50  0000 C CNN
+F 2 "" H 10750 3500 50  0001 C CNN
+F 3 "" H 10750 3500 50  0001 C CNN
+	1    10750 3500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1292,5 +1290,6 @@ F 3 "~" H 11050 4350 50  0001 C CNN
 	1    11050 4350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10850 3950
+Text GLabel 10750 1200 0    50   Input ~ 0
+PA11
 $EndSCHEMATC
