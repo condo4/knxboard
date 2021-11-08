@@ -686,10 +686,10 @@ F 4 "0.085" H 7100 3100 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push SwReset1
 U 1 1 61933FA8
 P 7450 3100
-F 0 "SW2" V 7450 3248 50  0000 L CNN
+F 0 "SwReset1" V 7450 3248 50  0000 L CNN
 F 1 "SW_Push" V 7495 3248 50  0001 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 7450 3300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/ALPS/SKQGABE010?qs=N5Jky1br14NGdH0AMYxewQ%3D%3D" H 7450 3300 50  0001 C CNN
@@ -855,10 +855,10 @@ Connection ~ 6150 4000
 Wire Wire Line
 	6150 4000 5800 4000
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push SwProg1
 U 1 1 619C29D7
 P 9850 2400
-F 0 "SW1" V 9850 2548 50  0000 L CNN
+F 0 "SwProg1" V 9850 2548 50  0000 L CNN
 F 1 "SW_Push" V 9895 2548 50  0001 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 9850 2600 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/ALPS/SKQGABE010?qs=N5Jky1br14NGdH0AMYxewQ%3D%3D" H 9850 2600 50  0001 C CNN
