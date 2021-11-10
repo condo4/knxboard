@@ -22,6 +22,7 @@ F 1 "STM32L432KCUx" V 8500 3600 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 8150 2700 50  0001 R CNN
 F 3 "https://www.mouser.fr/ProductDetail/STMicroelectronics/STM32L432KCU6?qs=sGAEpiMZZMueQxo7L%2FBPyGlkDlHQ8XwjqFkWSLh2yvA%3D" H 8550 3600 50  0001 C CNN
 F 4 "5.22" H 8550 3600 50  0001 C CNN "Price"
+F 5 "STM32L432KCU6 " H 8550 3600 50  0001 C CNN "MPN"
 	1    8550 3600
 	1    0    0    -1  
 $EndComp
@@ -34,6 +35,7 @@ F 1 "NCN5130" H 3450 3750 50  0000 L CNN
 F 2 "Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm_ThermalVias" H 3500 5300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/onsemi/NCN5130MNTWG?qs=sGAEpiMZZMsyYdr3R27aV%2FyfBetTZLuYah%252BU%2FGK00PQ%3D" H 3150 3650 50  0001 C CNN
 F 4 "6.61" H 3150 3650 50  0001 C CNN "Price"
+F 5 "NCN5130MNTWG " H 3150 3650 50  0001 C CNN "MPN"
 	1    3150 3650
 	1    0    0    -1  
 $EndComp
@@ -46,6 +48,7 @@ F 1 "1SMA40CA" V 1195 3830 50  0001 L CNN
 F 2 "Diode_SMD:D_SMA" H 1150 3750 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Bourns/SMAJ40CA?qs=A3H9pljuJ8S9ch8FWCUIag%3D%3D" H 1150 3750 50  0001 C CNN
 F 4 "0.249" H 1150 3750 50  0001 C CNN "Price"
+F 5 "SMAJ40CA " H 1150 3750 50  0001 C CNN "MPN"
 	1    1150 3750
 	0    1    1    0   
 $EndComp
@@ -58,6 +61,7 @@ F 1 "SS16" H 1400 3074 50  0001 C CNN
 F 2 "Diode_SMD:D_SMA" H 1400 3200 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/onsemi/SS16T3G?qs=xZq1yRCsb1c8788h1nFazA%3D%3D" H 1400 3200 50  0001 C CNN
 F 4 "0.292" H 1400 3200 50  0001 C CNN "Price"
+F 5 "SS16T3G " H 1400 3200 50  0001 C CNN "MPN"
 	1    1400 3200
 	-1   0    0    1   
 $EndComp
@@ -70,6 +74,7 @@ F 1 "27R 1W" V 2134 3200 50  0001 C CNN
 F 2 "Resistor_SMD:R_0612_1632Metric" V 2180 3200 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/KOA-Speer/WK73R2BTTD27R0F?qs=sGAEpiMZZMvdGkrng054t6odK5HnpZ6cfyF1%252BzoyWdM%3D" H 2250 3200 50  0001 C CNN
 F 4 "0.285" H 2250 3200 50  0001 C CNN "Price"
+F 5 "WK73R2BTTD27R0F " H 2250 3200 50  0001 C CNN "MPN"
 	1    2250 3200
 	0    1    1    0   
 $EndComp
@@ -82,6 +87,7 @@ F 1 "47nF 50V" V 1789 3300 50  0001 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1988 3150 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B473KB8NNND?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNnJM8feowB3A%3D" H 1950 3300 50  0001 C CNN
 F 4 "0.021" H 1950 3300 50  0001 C CNN "Price"
+F 5 "CL10B473KB8NNND " H 1950 3300 50  0001 C CNN "MPN"
 	1    1950 3300
 	0    1    1    0   
 $EndComp
@@ -94,6 +100,7 @@ F 1 "220nF 50V" V 2139 3600 50  0001 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 3450 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10A224KB8NNNC?qs=sGAEpiMZZMvsSlwiRhF8qtsGU%2FCnaNeQ2pAx%2FyO8BDlqGcrTKW51Mg%3D%3D" H 2300 3600 50  0001 C CNN
 F 4 "0.097" H 2300 3600 50  0001 C CNN "Price"
+F 5 "CL10A224KB8NNNC " H 2300 3600 50  0001 C CNN "MPN"
 	1    2300 3600
 	0    1    1    0   
 $EndComp
@@ -106,6 +113,7 @@ F 1 "100nF 50V" H 1715 4105 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1638 4000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KB8NFNC?qs=sGAEpiMZZMvsSlwiRhF8qunkWFWGyo%252Bv1GZw38BXXfVnkeSfSD0rvg%3D%3D" H 1600 4150 50  0001 C CNN
 F 4 "0.014" H 1600 4150 50  0001 C CNN "Price"
+F 5 "CL10B104KB8NFNC " H 1600 4150 50  0001 C CNN "MPN"
 	1    1600 4150
 	1    0    0    -1  
 $EndComp
@@ -179,6 +187,7 @@ F 1 "100uF 35V" H 1968 4105 50  0001 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 1888 4000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Nichicon/UUR1V101MCL6GS?qs=huzeVNXgovWypttWSImRTA%3D%3D" H 1850 4150 50  0001 C CNN
 F 4 "0.353" H 1850 4150 50  0001 C CNN "Price"
+F 5 "UUR1V101MCL6GS " H 1850 4150 50  0001 C CNN "MPN"
 	1    1850 4150
 	1    0    0    -1  
 $EndComp
@@ -232,6 +241,7 @@ F 1 "100nF 6.3V" H 5915 3305 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 3200 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 5800 3350 50  0001 C CNN
 F 4 "0.026" H 5800 3350 50  0001 C CNN "Price"
+F 5 "CL10B104KA8NNWC " H 5800 3350 50  0001 C CNN "MPN"
 	1    5800 3350
 	1    0    0    -1  
 $EndComp
@@ -275,6 +285,7 @@ F 1 "100nF 6.3V" V 2489 2300 50  0001 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 2150 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 2650 2300 50  0001 C CNN
 F 4 "0.026" H 2650 2300 50  0001 C CNN "Price"
+F 5 "CL10B104KA8NNWC " H 2650 2300 50  0001 C CNN "MPN"
 	1    2650 2300
 	-1   0    0    1   
 $EndComp
@@ -337,6 +348,7 @@ F 1 "10uF 6.3V ESR < 0.1ohm" H 2715 5005 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2638 4900 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KOQNNNG?qs=sGAEpiMZZMvsSlwiRhF8qiamir66WTSkBRoD9MoKPnM%3D" H 2600 5050 50  0001 C CNN
 F 4 "0.039" H 2600 5050 50  0001 C CNN "Price"
+F 5 "CL21A106KOQNNNG " H 2600 5050 50  0001 C CNN "MPN"
 	1    2600 5050
 	1    0    0    -1  
 $EndComp
@@ -360,6 +372,7 @@ F 1 "56K 1/16w" V 2784 4750 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4750 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C5602FP500?qs=sGAEpiMZZMvdGkrng054txcf3av6vnC8XzTnB3mS7jw%3D" H 2900 4750 50  0001 C CNN
 F 4 "0.08" H 2900 4750 50  0001 C CNN "Price"
+F 5 "MCT06030C5602FP500 " H 2900 4750 50  0001 C CNN "MPN"
 	1    2900 4750
 	-1   0    0    1   
 $EndComp
@@ -372,6 +385,7 @@ F 1 "499K 1/16w" V 2784 5250 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5250 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C4993FP500?qs=8lczJKL2ryeXiIiBeB6JCA%3D%3D" H 2900 5250 50  0001 C CNN
 F 4 "0.102" H 2900 5250 50  0001 C CNN "Price"
+F 5 "MCT06030C4993FP500 " H 2900 5250 50  0001 C CNN "MPN"
 	1    2900 5250
 	-1   0    0    1   
 $EndComp
@@ -407,6 +421,7 @@ F 1 "1R 1/16W" V 3234 4850 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4850 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW06031R00JNEC?qs=sGAEpiMZZMvdGkrng054t8tsKUCh5%2FbY4AhBMsyzAQQ%3D" H 3350 4850 50  0001 C CNN
 F 4 "0.008" H 3350 4850 50  0001 C CNN "Price"
+F 5 "CRCW06031R00JNEC " H 3350 4850 50  0001 C CNN "MPN"
 	1    3350 4850
 	-1   0    0    1   
 $EndComp
@@ -439,6 +454,7 @@ F 1 "220uH" H 3603 4805 50  0001 L CNN
 F 2 "Inductor_SMD:L_1008_2520Metric" H 3550 4850 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LB2518T221M?qs=I6KAKw0tg2yY77OJYA9jag%3D%3D" H 3550 4850 50  0001 C CNN
 F 4 "0.109" H 3550 4850 50  0001 C CNN "Price"
+F 5 "LB2518T221M " H 3550 4850 50  0001 C CNN "MPN"
 	1    3550 4850
 	1    0    0    -1  
 $EndComp
@@ -463,6 +479,7 @@ F 1 "220uH" H 3803 4805 50  0001 L CNN
 F 2 "Inductor_SMD:L_1008_2520Metric" H 3750 4850 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LB2518T221M?qs=I6KAKw0tg2yY77OJYA9jag%3D%3D" H 3750 4850 50  0001 C CNN
 F 4 "0.109" H 3750 4850 50  0001 C CNN "Price"
+F 5 "LB2518T221M " H 3750 4850 50  0001 C CNN "MPN"
 	1    3750 4850
 	1    0    0    -1  
 $EndComp
@@ -475,6 +492,7 @@ F 1 "1R 1/16W" V 3834 4850 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 4850 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW06031R00JNEC?qs=sGAEpiMZZMvdGkrng054t8tsKUCh5%2FbY4AhBMsyzAQQ%3D" H 3950 4850 50  0001 C CNN
 F 4 "0.008" H 3950 4850 50  0001 C CNN "Price"
+F 5 "CRCW06031R00JNEC " H 3950 4850 50  0001 C CNN "MPN"
 	1    3950 4850
 	-1   0    0    1   
 $EndComp
@@ -520,6 +538,7 @@ F 1 "10uF 6.3V ESR < 0.1ohm" H 4465 5005 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 4900 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KOQNNNG?qs=sGAEpiMZZMvsSlwiRhF8qiamir66WTSkBRoD9MoKPnM%3D" H 4350 5050 50  0001 C CNN
 F 4 "0.039" H 4350 5050 50  0001 C CNN "Price"
+F 5 "CL21A106KOQNNNG " H 4350 5050 50  0001 C CNN "MPN"
 	1    4350 5050
 	1    0    0    -1  
 $EndComp
@@ -553,6 +572,7 @@ F 1 "10pF 6.3V" V 3389 1450 50  0001 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3588 1300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10C100JB8NNND?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNW3qxrQ2K0NU%3D" H 3550 1450 50  0001 C CNN
 F 4 "0.032" H 3550 1450 50  0001 C CNN "Price"
+F 5 "CL10C100JB8NNND " H 3550 1450 50  0001 C CNN "MPN"
 	1    3550 1450
 	1    0    0    -1  
 $EndComp
@@ -565,6 +585,7 @@ F 1 "10pF 6.3V" V 3689 1450 50  0001 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 1300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10C100JB8NNND?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNW3qxrQ2K0NU%3D" H 3850 1450 50  0001 C CNN
 F 4 "0.032" H 3850 1450 50  0001 C CNN "Price"
+F 5 "CL10C100JB8NNND " H 3850 1450 50  0001 C CNN "MPN"
 	1    3850 1450
 	1    0    0    -1  
 $EndComp
@@ -577,6 +598,7 @@ F 1 "FA-238" H 3894 1855 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm" H 3700 1900 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Epson-Timing/FA-238-160000MD30X-W3?qs=f9yNj16SXrIs1foPi9xf%2Fw%3D%3D" H 3700 1900 50  0001 C CNN
 F 4 "0.445" H 3700 1900 50  0001 C CNN "Price"
+F 5 "FA-238 16.0000MD30X-W3 " H 3700 1900 50  0001 C CNN "MPN"
 	1    3700 1900
 	1    0    0    -1  
 $EndComp
@@ -665,6 +687,7 @@ F 1 "1uF 35V ESR < 2ohm" H 2215 4105 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2138 4000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=sGAEpiMZZMvsSlwiRhF8qtsBU8Zhqm2RLIDZDghI9lGzj%2FYVDbgmuQ%3D%3D" H 2100 4150 50  0001 C CNN
 F 4 "0.102" H 2100 4150 50  0001 C CNN "Price"
+F 5 "CL10A105KL8NNNC " H 2100 4150 50  0001 C CNN "MPN"
 	1    2100 4150
 	1    0    0    -1  
 $EndComp
@@ -682,6 +705,7 @@ F 1 "100nF 6.3V" H 7215 3055 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 2950 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 7100 3100 50  0001 C CNN
 F 4 "0.026" H 7100 3100 50  0001 C CNN "Price"
+F 5 "CL10B104KA8NNWC " H 7100 3100 50  0001 C CNN "MPN"
 	1    7100 3100
 	1    0    0    -1  
 $EndComp
@@ -694,6 +718,7 @@ F 1 "SW_Push" V 7495 3248 50  0001 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 7450 3300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/ALPS/SKQGABE010?qs=N5Jky1br14NGdH0AMYxewQ%3D%3D" H 7450 3300 50  0001 C CNN
 F 4 "0.497" H 7450 3100 50  0001 C CNN "Price"
+F 5 "SKQGABE010 " H 7450 3100 50  0001 C CNN "MPN"
 	1    7450 3100
 	0    1    1    0   
 $EndComp
@@ -717,6 +742,7 @@ F 1 "10K 1/16w" V 7634 3300 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 3300 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMvdGkrng054t%252B7N8nKX0VXe%2FafJHKs0Nqw%3D" H 7750 3300 50  0001 C CNN
 F 4 "0.085" H 7750 3300 50  0001 C CNN "Price"
+F 5 "MCT06030C1002FP500 " H 7750 3300 50  0001 C CNN "MPN"
 	1    7750 3300
 	0    1    1    0   
 $EndComp
@@ -742,6 +768,7 @@ F 1 "220uH" H 8703 2205 50  0001 L CNN
 F 2 "Inductor_SMD:L_1008_2520Metric" H 8650 2250 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LB2518T221M?qs=I6KAKw0tg2yY77OJYA9jag%3D%3D" H 8650 2250 50  0001 C CNN
 F 4 "0.109" H 8650 2250 50  0001 C CNN "Price"
+F 5 "LB2518T221M " H 8650 2250 50  0001 C CNN "MPN"
 	1    8650 2250
 	1    0    0    -1  
 $EndComp
@@ -773,6 +800,7 @@ F 1 "100nF 6.3V" H 8165 2205 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8088 2100 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 8050 2250 50  0001 C CNN
 F 4 "0.026" H 8050 2250 50  0001 C CNN "Price"
+F 5 "CL10B104KA8NNWC " H 8050 2250 50  0001 C CNN "MPN"
 	1    8050 2250
 	1    0    0    -1  
 $EndComp
@@ -785,6 +813,7 @@ F 1 "10uF 6.3V ESR < 0.1ohm" H 7915 2205 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7838 2100 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KOQNNNG?qs=sGAEpiMZZMvsSlwiRhF8qiamir66WTSkBRoD9MoKPnM%3D" H 7800 2250 50  0001 C CNN
 F 4 "0.039" H 7800 2250 50  0001 C CNN "Price"
+F 5 "CL21A106KOQNNNG " H 7800 2250 50  0001 C CNN "MPN"
 	1    7800 2250
 	1    0    0    -1  
 $EndComp
@@ -822,6 +851,7 @@ F 1 "100R" V 7384 4000 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 4000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Vishay-Beyschlag/MCT06030C1000FP500?qs=sGAEpiMZZMvdGkrng054t%252B7APogc7nBOr0El19B1Nr8%3D" H 7500 4000 50  0001 C CNN
 F 4 "0.075" H 7500 4000 50  0001 C CNN "Price"
+F 5 "MCT06030C1000FP500 " H 7500 4000 50  0001 C CNN "MPN"
 	1    7500 4000
 	0    1    1    0   
 $EndComp
@@ -834,6 +864,7 @@ F 1 "LED" H 6943 4126 50  0001 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 6950 4000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/150060RS55040?qs=8Aam6%252B7C6HHnMZFlrlTntA%3D%3D" H 6950 4000 50  0001 C CNN
 F 4 "0.142" H 6950 4000 50  0001 C CNN "Price"
+F 5 "150060RS55040 " H 6950 4000 50  0001 C CNN "MPN"
 	1    6950 4000
 	1    0    0    -1  
 $EndComp
@@ -863,6 +894,7 @@ F 1 "SW_Push" V 9895 2548 50  0001 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 9850 2600 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/ALPS/SKQGABE010?qs=N5Jky1br14NGdH0AMYxewQ%3D%3D" H 9850 2600 50  0001 C CNN
 F 4 "0.497" H 9850 2400 50  0001 C CNN "Price"
+F 5 "SKQGABE010 " H 9850 2400 50  0001 C CNN "MPN"
 	1    9850 2400
 	0    1    1    0   
 $EndComp
@@ -875,6 +907,7 @@ F 1 "100nF 6.3V" H 9715 2355 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9638 2250 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL10B104KA8NNWC?qs=sGAEpiMZZMvsSlwiRhF8qvCY8MbTG5UFsLNcvFy0oSw%3D" H 9600 2400 50  0001 C CNN
 F 4 "0.026" H 9600 2400 50  0001 C CNN "Price"
+F 5 "CL10B104KA8NNWC " H 9600 2400 50  0001 C CNN "MPN"
 	1    9600 2400
 	1    0    0    -1  
 $EndComp
