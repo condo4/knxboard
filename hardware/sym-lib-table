@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "KNX_NCN5130")(type "Legacy")(uri "${KIPRJMOD}/KNX_NCN5130.lib")(options "")(descr ""))
   (lib (name "KnxBoard-rescue")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard-rescue.lib")(options "")(descr ""))
+  (lib (name "STM32U")(type "Legacy")(uri "${KIPRJMOD}/STM32U575CIU6Q.lib")(options "")(descr ""))
 )
