@@ -1,0 +1,13 @@
+- Finir de convertire la stack Arduino en pure C fonctionnel sur la carte STM32L432KC + TPUART
+- Comparer la stack arduino avec la mienne
+- Faire marcher ma stack avec TP-UART en plus du STKNX
+- Tester MaStack sur Nucleo-STM32L432KC + TPUART et KnxBoardV1
+- Démarer la carte Nucleo-STM32U575
+- Essayer de faire du code auto/programable/flashable
+- Tester MaStack sur Nucleo-STM32U575 + TPUART
+- Connecter Nucleo-STM32U575 avec NCN5130 du shield arduino
+- Adapter et Tester MaStack sur Nucleo-STM32U575 + NCN5130
+- Modifier le schema de la carte KnxBoardV4 pour utiliser le STM32U575 et verifier avec le schema du shield le schema autour du NCN5130
+- Router la carte
+- Acheter et modifer le four
+- Faire KnxBoardV4
