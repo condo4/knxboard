@@ -4189,15 +4189,71 @@
     (pin "2" (uuid fe9ea3ff-1c84-4d22-ac20-d0b2a9e920a0))
   )
 
-  (sheet (at 231.14 137.16) (size 31.75 19.05) (fields_autoplaced)
+  (sheet (at 130.81 142.24) (size 39.37 35.56) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid d8441614-dec4-4bc1-b184-c502a3d79ed5)
-    (property "Sheet name" "MCU" (id 0) (at 231.14 136.4484 0)
+    (property "Sheet name" "MCU" (id 0) (at 130.81 141.5284 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "mcu.kicad_sch" (id 1) (at 231.14 156.7946 0)
+    (property "Sheet file" "mcu.kicad_sch" (id 1) (at 130.81 178.3846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "DEBUG_JTDI" input (at 170.18 146.05 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 2b932551-5e8a-4b93-9b64-5b6d9a8a1444)
+    )
+    (pin "KNX_UART_TX" output (at 130.81 146.05 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 27f39282-5da2-485a-8888-327684b258d1)
+    )
+    (pin "KNX_UART_RX" input (at 130.81 149.86 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 6370c892-9430-4ab6-9bb1-ab7d93046e44)
+    )
+    (pin "DEBUG_UART_TX" output (at 170.18 165.1 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid b5ad9887-9093-4c96-9959-ec2a5236b700)
+    )
+    (pin "DEBUG_UART_RX" input (at 170.18 161.29 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 472f5bd3-21a1-453f-b20c-fb0e92cd71be)
+    )
+    (pin "DEBUG_JTMS-SWDIO" bidirectional (at 170.18 149.86 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid fa857133-4d21-468c-8ed8-6b2070722ff9)
+    )
+    (pin "DEBUG_JTCK-SWCLK" input (at 170.18 153.67 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 8f8f6df5-5c43-4c67-9f89-42f15823da09)
+    )
+    (pin "DEBUG_JTDA-SWO" output (at 170.18 157.48 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid f7cf68c7-c5f7-44bc-9ba0-d5736bb4b944)
+    )
+    (pin "RCC_OSC_IN" input (at 130.81 153.67 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 692c14ec-93bd-4926-8d43-749f59d3f03f)
+    )
+    (pin "KNX_PROG_BTN" input (at 130.81 165.1 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid acdf0fd0-a4f6-4cdd-8f6f-51d5e7b3248f)
+    )
+    (pin "KNX_PROG_LED" output (at 130.81 168.91 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 4437f5f8-4dd2-4df0-97b4-e1b1c49fe726)
+    )
+    (pin "KNX_SAVEB" input (at 130.81 157.48 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e9c442d7-466d-4044-b46e-9c769757afeb)
+    )
+    (pin "NRST" input (at 130.81 175.26 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid dff1f4ae-704b-4eb7-a018-4db64c436e66)
+    )
+    (pin "KNX_RESETB" input (at 130.81 161.29 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 14009a42-26d3-4a44-b399-56511f461789)
     )
   )
 
@@ -4279,20 +4335,62 @@
     (path "/00000000-0000-0000-0000-000061a2ff1c"
       (reference "#PWR0124") (unit 1) (value "+3.3V") (footprint "")
     )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/03d27323-09b9-4b11-a017-9b5707a4dd98"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/0e9598fb-406f-4d4d-b9a8-c71195fe8ca0"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/3343c915-cf9e-405b-b8b0-f09759c8714d"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/3be508aa-8a93-4fde-9c22-a5b8008e5c2e"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/7b38bb45-3f6f-4e1e-a07e-f7739b04601c"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/a6da1779-828c-48b4-a087-8262a42e5001"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/b25d33ec-3885-48d4-84ad-c25564664654"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/0dea2631-b9f1-4451-83e1-0bf67fac2912"
+      (reference "B1") (unit 1) (value "Reset") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006184f7b9"
       (reference "C1") (unit 1) (value "47nF 50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000618500a3"
       (reference "C2") (unit 1) (value "220nF 50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/ed583750-47fe-4327-89c8-ba86b7af17a1"
+      (reference "C2") (unit 1) (value "10uF") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000618508bd"
       (reference "C3") (unit 1) (value "100nF 50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/de02d626-c6a9-4a11-a470-5f7c3b547a04"
+      (reference "C3_25") (unit 1) (value "100nF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/933de220-4835-475e-b429-30ce2da9a7e1"
+      (reference "C3_36") (unit 1) (value "100nF") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/f1ce25fb-e741-4020-b5e8-a7f4df1b610b"
+      (reference "C3_48") (unit 1) (value "100nF") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006186317f"
       (reference "C4") (unit 1) (value "100uF 35V") (footprint "Capacitor_SMD:CP_Elec_6.3x7.7")
     )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/48cdbdf2-3cea-4abb-8f0a-a74466c9c644"
+      (reference "C4") (unit 1) (value "1uF") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006186f111"
       (reference "C5") (unit 1) (value "100nF 6.3V") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/97e619e0-9643-4a02-b982-345810d00de5"
+      (reference "C5_9") (unit 1) (value "100nF") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006186bb40"
       (reference "C6") (unit 1) (value "100nF 6.3V") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -4309,6 +4407,9 @@
     (path "/00000000-0000-0000-0000-0000618789a8"
       (reference "C11") (unit 1) (value "10uF 6.3V ESR < 0.1ohm") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/96b13407-7e12-4054-b229-f3f0cc548ef8"
+      (reference "C17") (unit 1) (value "100 nF") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000619333de"
       (reference "C20") (unit 1) (value "100nF 6.3V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
@@ -4323,6 +4424,9 @@
     )
     (path "/00000000-0000-0000-0000-00006192b77e"
       (reference "C41") (unit 1) (value "1uF 35V ESR < 2ohm") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/8de7da5f-7df4-40b3-a4bc-ad510060c643"
+      (reference "D0") (unit 1) (value "D_Zener") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006184e20b"
       (reference "D1") (unit 1) (value "SS16") (footprint "Diode_SMD:D_SMA")
@@ -4341,6 +4445,15 @@
     )
     (path "/00000000-0000-0000-0000-0000618c9594"
       (reference "J4") (unit 1) (value "Conn_01x02_Male") (footprint "KnxBoard:KNX_Connector")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/fc0c20c5-9ece-4d81-a60c-9e53f7381e41"
+      (reference "JP0") (unit 1) (value "Bootloader") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/22f1cb52-4883-4437-8049-9308b42419f9"
+      (reference "JP1") (unit 1) (value "Bootflash") (footprint "")
+    )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/f88a27cb-f856-46c2-87da-e841ed3ef555"
+      (reference "JP2") (unit 1) (value "RESETB_NRST") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000618a5317"
       (reference "L1") (unit 1) (value "220uH") (footprint "Inductor_SMD:L_1008_2520Metric")
@@ -4390,14 +4503,14 @@
     (path "/00000000-0000-0000-0000-000061933fa8"
       (reference "SwReset1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_SKQG_WithStem")
     )
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/ea06bc96-3cff-45c0-bbf2-79a6c8f72bbc"
+      (reference "U0") (unit 1) (value "STM32U575CIU6Q") (footprint "KnxBoard:STM32U575CIU6Q")
+    )
     (path "/00000000-0000-0000-0000-00006184ba14"
       (reference "U1") (unit 1) (value "NCN5130") (footprint "Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm_ThermalVias")
     )
     (path "/00000000-0000-0000-0000-0000618445e2"
       (reference "U3") (unit 1) (value "STM32L432KCUx") (footprint "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias")
-    )
-    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/ea06bc96-3cff-45c0-bbf2-79a6c8f72bbc"
-      (reference "U?") (unit 1) (value "STM32U575CIU6Q") (footprint "KnxBoard:STM32U575CIU6Q")
     )
     (path "/00000000-0000-0000-0000-0000618e2a33"
       (reference "X1") (unit 1) (value "FA-238") (footprint "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm")
