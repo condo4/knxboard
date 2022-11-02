@@ -12,13 +12,13 @@
 
   (lib_symbols
     (symbol "Connector:Conn_01x02_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (id 0) (at 0 2.54 0)
+      (property "Reference" "J4" (id 0) (at 2.7432 2.2606 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x02_Male" (id 1) (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "Conn_01x02_Male" (id 1) (at 2.7432 2.286 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Footprint" "" (id 2) (at 0 0 0)
+      (property "Footprint" "KnxBoard:KNX_Connector" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "~" (id 3) (at 0 0 0)
@@ -1360,6 +1360,24 @@
     (pin "2" (uuid 09db834f-eeaf-43e0-b441-4aa6fd21f44e))
   )
 
+  (symbol (lib_id "power:VDD") (at 218.44 46.99 90) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 1f28e666-08ca-4533-a0f9-b8ef0cf3a34a)
+    (property "Reference" "#PWR0109" (id 0) (at 222.25 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (id 1) (at 214.63 46.9899 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 218.44 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 218.44 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7e1edb3e-1238-49ba-8c10-6d334aada26b))
+  )
+
   (symbol (lib_id "power:+12V") (at 77.47 68.58 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 32e0a1fd-3954-47a4-b09c-9a3200e4d210)
@@ -1419,22 +1437,6 @@
     (pin "1" (uuid 6b6667b8-a6c7-42ab-8d4f-30848dd288ea))
   )
 
-  (symbol (lib_id "power:VDD") (at 218.44 153.67 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 59037098-9a35-43ca-a94a-65dd555019db)
-    (property "Reference" "#PWR0113" (id 0) (at 222.25 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VDD" (id 1) (at 213.36 153.67 90))
-    (property "Footprint" "" (id 2) (at 218.44 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 218.44 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d37f9d71-3088-42cc-8736-78b5b47b9405))
-  )
-
   (symbol (lib_id "Connector_Generic:Conn_01x12") (at 223.52 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5c9f3d65-4d1d-4dfc-bd7c-823c1a8dc160)
@@ -1480,6 +1482,42 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ba6de865-9619-4571-af8a-31dd4b1450ef))
+  )
+
+  (symbol (lib_id "power:VDD") (at 218.44 153.67 90) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 63d06dee-333a-4cda-b96e-d9753592e109)
+    (property "Reference" "#PWR0105" (id 0) (at 222.25 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (id 1) (at 214.63 153.6699 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 218.44 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 218.44 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2dbf2adf-27bc-4d36-bc92-4c857b29ef89))
+  )
+
+  (symbol (lib_id "power:VDD") (at 218.44 83.82 90) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 6b02f891-3897-4eda-bf52-9781beb451b1)
+    (property "Reference" "#PWR0108" (id 0) (at 222.25 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (id 1) (at 214.63 83.8199 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 218.44 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 218.44 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9438c4ee-aa2b-4664-9732-835c9b7db8e8))
   )
 
   (symbol (lib_id "power:GNDREF") (at 82.55 125.73 0) (unit 1)
@@ -1563,22 +1601,6 @@
     (pin "9" (uuid d392b834-94ac-4f94-a841-c139c0e08580))
   )
 
-  (symbol (lib_id "power:VDD") (at 218.44 46.99 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid b4d1a9ff-7029-4d88-bd2d-2dc1a62ddefb)
-    (property "Reference" "#PWR0108" (id 0) (at 222.25 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VDD" (id 1) (at 213.36 46.99 90))
-    (property "Footprint" "" (id 2) (at 218.44 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 218.44 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e49194e8-ec0f-493c-9822-29cc3f9ceb7b))
-  )
-
   (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 107.95 74.93 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c1759e20-ff3c-4638-af59-bee2afa27ade)
@@ -1592,22 +1614,6 @@
     )
     (pin "1" (uuid c2b9057c-c2af-4d06-9486-e3a9ce00629b))
     (pin "2" (uuid 9db4f811-208a-4c08-9abb-d2fbaa137084))
-  )
-
-  (symbol (lib_id "power:VDD") (at 218.44 83.82 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid f3fc4559-d7f0-4587-986c-afbacda02cd2)
-    (property "Reference" "#PWR0105" (id 0) (at 222.25 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VDD" (id 1) (at 213.36 83.82 90))
-    (property "Footprint" "" (id 2) (at 218.44 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 218.44 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a1a8d52-ec3a-4694-b543-0f6c970a11b6))
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x16") (at 223.52 133.35 0) (unit 1)
@@ -1661,14 +1667,6 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid e633b96c-6f39-460c-b937-1c5b502abc23)
     )
-    (pin "KNX_GND" output (at 77.47 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 4d8ca453-105d-4b6e-af57-af0567fb34e1)
-    )
-    (pin "KNX_V3.3" output (at 77.47 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid e32114bc-2431-4f5f-8d92-74227fac8a5e)
-    )
     (pin "KNX+" input (at 41.91 83.82 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid ca3b81b7-3a5c-480a-8ab2-d6493c2544cc)
@@ -1676,10 +1674,6 @@
     (pin "KNX-" input (at 41.91 86.36 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 6751c08c-9528-437d-a2f4-478b053a2595)
-    )
-    (pin "KNX_V12" output (at 77.47 68.58 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 15e4c2c3-fadd-4cf0-8d7f-4221768f2832)
     )
     (pin "RESETB" output (at 77.47 96.52 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1692,6 +1686,18 @@
     (pin "CLK16MHZ" output (at 77.47 88.9 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 292873d4-d946-492a-8394-8f86755b5188)
+    )
+    (pin "+12V" output (at 77.47 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 3dd9ea8a-17f3-4d11-a4e9-da433bd6c853)
+    )
+    (pin "+3.3V" output (at 77.47 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid f1e7cdba-92b3-4b15-ac03-a4e6d4ccd57c)
+    )
+    (pin "GNDREF" output (at 77.47 101.6 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 93cca84c-0f45-465c-9555-dde1708ed759)
     )
   )
 
@@ -1760,14 +1766,6 @@
     (pin "KNX_RESETB" input (at 153.67 96.52 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 14009a42-26d3-4a44-b399-56511f461789)
-    )
-    (pin "MCU_GND" input (at 153.67 101.6 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1876e79f-917d-460c-a608-ff8baa8676a3)
-    )
-    (pin "MCU_V33" input (at 153.67 74.93 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 689f332c-fc44-4980-a8df-b4d26868743d)
     )
     (pin "PB13" bidirectional (at 196.85 146.05 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1861,6 +1859,14 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 5f9b9fd4-3261-492b-8d73-b647113aae0a)
     )
+    (pin "GNDREF" input (at 153.67 101.6 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid af627cd1-9b8b-41fa-aa24-fb923e5e5282)
+    )
+    (pin "VDD" input (at 153.67 74.93 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 48e91405-2a72-487e-948d-4d6219f2af9c)
+    )
   )
 
   (sheet_instances
@@ -1882,7 +1888,7 @@
     (path "/7718a0dd-99e7-4183-b28a-b976bf6b3a8d"
       (reference "#PWR0104") (unit 1) (value "GNDREF") (footprint "")
     )
-    (path "/f3fc4559-d7f0-4587-986c-afbacda02cd2"
+    (path "/63d06dee-333a-4cda-b96e-d9753592e109"
       (reference "#PWR0105") (unit 1) (value "VDD") (footprint "")
     )
     (path "/4c4e4767-4f62-43ae-b929-70dc9589a1f2"
@@ -1891,10 +1897,10 @@
     (path "/80dce158-a554-4e16-8ce8-ea19216ebb30"
       (reference "#PWR0107") (unit 1) (value "GNDREF") (footprint "")
     )
-    (path "/b4d1a9ff-7029-4d88-bd2d-2dc1a62ddefb"
+    (path "/6b02f891-3897-4eda-bf52-9781beb451b1"
       (reference "#PWR0108") (unit 1) (value "VDD") (footprint "")
     )
-    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/942768fa-d357-4ac8-8c40-f037d6648e04"
+    (path "/1f28e666-08ca-4533-a0f9-b8ef0cf3a34a"
       (reference "#PWR0109") (unit 1) (value "VDD") (footprint "")
     )
     (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/a6da1779-828c-48b4-a087-8262a42e5001"
@@ -1903,10 +1909,10 @@
     (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/03d27323-09b9-4b11-a017-9b5707a4dd98"
       (reference "#PWR0111") (unit 1) (value "GNDREF") (footprint "")
     )
-    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/ac8178a7-da6d-4f88-97b2-e0db79482ec1"
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/f7806dcd-71e9-4123-92b7-ea99280c7f64"
       (reference "#PWR0112") (unit 1) (value "VDD") (footprint "")
     )
-    (path "/59037098-9a35-43ca-a94a-65dd555019db"
+    (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/f6ee3763-9f63-4d66-8c6a-8e8ae5884c34"
       (reference "#PWR0113") (unit 1) (value "VDD") (footprint "")
     )
     (path "/d8441614-dec4-4bc1-b184-c502a3d79ed5/b25d33ec-3885-48d4-84ad-c25564664654"
@@ -1939,8 +1945,8 @@
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/b660b85f-bdef-4024-904f-b6e2cf0b5896"
       (reference "#PWR0123") (unit 1) (value "GNDREF") (footprint "")
     )
-    (path "/60177bd8-6562-4452-843e-ff6a093b4415/77ebf47f-e1d0-4519-8199-d5158efcd707"
-      (reference "#PWR0124") (unit 1) (value "GND") (footprint "")
+    (path "/60177bd8-6562-4452-843e-ff6a093b4415/71746e08-0b26-48d0-bd1c-2499c9203f7e"
+      (reference "#PWR0124") (unit 1) (value "GNDREF") (footprint "")
     )
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/6eb22094-8b3e-49f0-8989-2e622c12a153"
       (reference "#PWR0125") (unit 1) (value "+12V") (footprint "")
@@ -1957,14 +1963,17 @@
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/fb06e8a6-7c22-427c-a4b8-7b829f8af3c6"
       (reference "#PWR0129") (unit 1) (value "+3.3V") (footprint "")
     )
-    (path "/60177bd8-6562-4452-843e-ff6a093b4415/48de7eec-6807-4ec7-bc65-58700888663d"
-      (reference "#PWR0130") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/60177bd8-6562-4452-843e-ff6a093b4415/645a3b21-7a52-496d-83f4-8477c88fdeac"
-      (reference "#PWR0131") (unit 1) (value "GND") (footprint "")
+    (path "/60177bd8-6562-4452-843e-ff6a093b4415/f956d0e5-1697-46f2-a21a-1c5f1425614c"
+      (reference "#PWR0131") (unit 1) (value "GNDREF") (footprint "")
     )
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/d5bc4329-3ca5-44ec-89dc-0ac10bdf6950"
       (reference "#PWR0132") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/60177bd8-6562-4452-843e-ff6a093b4415/6eecba6d-b1ad-43df-ba6f-6b5ef9051bc4"
+      (reference "#PWR0133") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/60177bd8-6562-4452-843e-ff6a093b4415/983da9d3-9aeb-4ce2-aad5-1fea20d29489"
+      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
     )
     (path "/082dec17-2d5d-4dc3-aea8-299af407049c"
       (reference "B2") (unit 1) (value "KNX_PROG") (footprint "Button_Switch_SMD:SW_SPST_SKQG_WithStem")
