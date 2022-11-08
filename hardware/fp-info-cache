@@ -1,4 +1,4 @@
-6629871837172
+8297785365919
 KnxBoard
 KNX_Connector
 
@@ -6,6 +6,13 @@ KNX_Connector
 0
 2
 2
+KnxBoard
+NCN5130
+NCN5130
+Integrated Circuit
+0
+41
+41
 KnxBoard
 STM32G491KEU6
 UFQFPN - 32 pins

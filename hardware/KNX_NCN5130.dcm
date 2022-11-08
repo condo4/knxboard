@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP NCN5130
-D NCN5130 is a receiver−transmitter IC suitable for use in KNX twisted pair networks (KNX TP1−256).
-K KNX Transceiver for Twisted Pair Networks
-$ENDCMP
-#
-#End Doc Library

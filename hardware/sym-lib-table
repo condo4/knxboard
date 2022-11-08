@@ -1,7 +1,6 @@
 (sym_lib_table
-  (lib (name "KNX_NCN5130")(type "Legacy")(uri "${KIPRJMOD}/KNX_NCN5130.lib")(options "")(descr ""))
-  (lib (name "KnxBoard-rescue")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard-rescue.lib")(options "")(descr ""))
-  (lib (name "STM32U575CIU6Q")(type "Legacy")(uri "${KIPRJMOD}/STM32U575CIU6Q.lib")(options "")(descr ""))
-  (lib (name "STM32U575CIT6")(type "Legacy")(uri "${KIPRJMOD}/STM32U575CIT6.lib")(options "")(descr ""))
-  (lib (name "STM32G491KEU6")(type "Legacy")(uri "${KIPRJMOD}/STM32G491KEU6.lib")(options "")(descr ""))
+  (lib (name "STM32U575CIU6Q")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard.lib/STM32U575CIU6Q.lib")(options "")(descr ""))
+  (lib (name "STM32U575CIT6")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard.lib/STM32U575CIT6.lib")(options "")(descr ""))
+  (lib (name "STM32G491KEU6")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard.lib/STM32G491KEU6.lib")(options "")(descr ""))
+  (lib (name "NCN5130")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard.lib/NCN5130.lib")(options "")(descr ""))
 )
