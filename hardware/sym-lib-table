@@ -3,4 +3,5 @@
   (lib (name "KnxBoard-rescue")(type "Legacy")(uri "${KIPRJMOD}/KnxBoard-rescue.lib")(options "")(descr ""))
   (lib (name "STM32U575CIU6Q")(type "Legacy")(uri "${KIPRJMOD}/STM32U575CIU6Q.lib")(options "")(descr ""))
   (lib (name "STM32U575CIT6")(type "Legacy")(uri "${KIPRJMOD}/STM32U575CIT6.lib")(options "")(descr ""))
+  (lib (name "STM32G491KEU6")(type "Legacy")(uri "${KIPRJMOD}/STM32G491KEU6.lib")(options "")(descr ""))
 )

@@ -1861,7 +1861,7 @@
   (symbol (lib_id "power:GNDREF") (at 153.67 52.07 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 983da9d3-9aeb-4ce2-aad5-1fea20d29489)
-    (property "Reference" "#PWR?" (id 0) (at 153.67 45.72 0)
+    (property "Reference" "#PWR0139" (id 0) (at 153.67 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (id 1) (at 147.32 49.53 0))
