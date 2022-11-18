@@ -1,3 +1,5 @@
+- V4.0.0: STM32G491KEU6 + NCN5130
+
 - Finir de convertire la stack Arduino en pure C fonctionnel sur la carte STM32L432KC + TPUART
 - Comparer la stack arduino avec la mienne
 - Faire marcher ma stack avec TP-UART en plus du STKNX
