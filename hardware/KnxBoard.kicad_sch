@@ -707,7 +707,6 @@
     )
   )
 
-
   (junction (at 96.52 92.71) (diameter 0) (color 0 0 0 0)
     (uuid 1e64286b-f382-44a9-b575-510f1a4db6e8)
   )
@@ -1759,10 +1758,10 @@
       (reference "C9") (unit 1) (value "100uF 35V") (footprint "Capacitor_SMD:CP_Elec_6.3x7.7")
     )
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/814a3b35-c4d9-4671-90e6-d8bf5b4e30df"
-      (reference "C10") (unit 1) (value "1uF 50V ESR < 2ohm") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+      (reference "C10") (unit 1) (value "1uF 35V ESR < 2ohm") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/6561e360-6b63-4856-b952-c003991a4ee7"
-      (reference "C11") (unit 1) (value "10uF 6.3V ESR < 0.1ohm") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+      (reference "C11") (unit 1) (value "10uF 16V ESR < 0.1ohm") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/60177bd8-6562-4452-843e-ff6a093b4415/77446251-bfbd-4805-8cd3-d7f08c3563ef"
       (reference "C12") (unit 1) (value "10uF 6.3V ESR < 0.1ohm") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")

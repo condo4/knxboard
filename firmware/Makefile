@@ -16,7 +16,7 @@ SFLAGS= --static -nostartfiles -std=c11 -g3 -Os
 SFLAGS+= -fno-common -ffunction-sections -fdata-sections
 SFLAGS+= -I./libopencm3/include -L./libopencm3/lib
 LFLAGS+=-Wl,--start-group -lc -lgcc -lnosys -Wl,--end-group
-LFLAGS+= -DKNXGPIOLED_PIN=$(KNXGPIOLED_PIN) -DKNXGPIOLED_PORT=$(KNXGPIOLED_PORT)
+LFLAGS+= -DKNXGPIOLED_PIN=$(KNXGPIOLED_PIN) -DKNXGPIOLED_PORT=$(KNXGPIOLED_PORT) -DKNXGPIOLED_RCC=$(KNXGPIOLED_RCC)
 M4FH_FLAGS= $(SFLAGS) -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16
 
 $(OD)/stm32/knxboard.elf: main.c libopencm3/lib/libopencm3_stm32$(MCUTYPE).a
