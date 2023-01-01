@@ -21,7 +21,7 @@ BIN = $(CP) -O binary -S
 DEBUG = 1
 OPT = -Og
 MCU = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-C_DEFS = -DUSE_HAL_DRIVER -D$(MCUFLAG) -DBOARD=$(BOARD)
+C_DEFS = -DUSE_HAL_DRIVER -D$(MCUFLAG) -D$(MCUFLAG2) -DBOARD=$(BOARD)
 C_INCLUDES = -I$(wildcard Core/$(BOARD)/Core/Inc) -I$(wildcard Core/$(BOARD)/Core/Src) -I$(wildcard Core/$(BOARD)/Drivers/*_HAL_Driver/Inc) -I$(wildcard Core/$(BOARD)/Drivers/CMSIS/Device/ST/*/Include) -I$(wildcard Core/$(BOARD)/Drivers/CMSIS/Include)
 AS_INCLUDES = 
 ASFLAGS  = $(MCU) $(AS_DEFS) $(AS_INCLUDES)
@@ -34,10 +34,14 @@ LIBDIR =
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 
-SOURCE_CORE  = $(wildcard Core/$(BOARD)/Core/Src/s*.c)
-DRIVER_CORE  = $(wildcard Core/$(BOARD)/Drivers/*/Src/*_hal*.c)
-MAIN_CORE    = main.c
-ASM_SOURCES =  $(wildcard Core/$(BOARD)/startup_s*.s)
+SOURCE_CORE    = $(wildcard Core/$(BOARD)/Core/Src/s*.c)
+DRIVER_CORE    = $(wildcard Core/$(BOARD)/Drivers/*/Src/*_hal*.c)
+DRIVER_CORE_RM = $(wildcard Core/$(BOARD)/Drivers/*/Src/*_hal*_template.c)
+MAIN_CORE      = main.c
+ASM_SOURCES    =  $(wildcard Core/$(BOARD)/startup_s*.s)
+TMPVAR := $(DRIVER_CORE)
+DRIVER_CORE = $(filter-out $(DRIVER_CORE_RM), $(TMPVAR))
+
 
 
 OBJECTS  = $(addprefix $(BUILD_DIR)/,$(SOURCE_CORE:.c=.o))
