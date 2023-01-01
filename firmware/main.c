@@ -17,6 +17,7 @@ void _write(void)
 }
 
 int main(void){
+    static uint32_t last_tick = 0;
     HAL_Init();
     MX_DMA_Init();
     MX_USART1_UART_Init();
@@ -25,6 +26,14 @@ int main(void){
     MX_GPIO_Init();
     MX_ADC1_Init();
     
+    HAL_GPIO_WritePin(KNX_PROG_LED_GPIO_Port, KNX_PROG_LED_Pin, GPIO_PIN_SET);
+    
     while (1){
+        
+        if(HAL_GetTick() > (last_tick + 500) || last_tick >  HAL_GetTick())/* Meas each 5s */
+        {
+            last_tick = HAL_GetTick();
+            HAL_GPIO_TogglePin(KNX_PROG_LED_GPIO_Port, KNX_PROG_LED_Pin);
+        }
     }
 }

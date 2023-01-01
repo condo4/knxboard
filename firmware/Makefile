@@ -1,5 +1,4 @@
 # BOARD= KNXBOARDV1 KNXBOARDV4 NUCLEOL432
-
 ifndef BOARD
 BOARD=KNXBOARDV4
 $(info BOARD is not set, use default $(BOARD))
@@ -12,8 +11,12 @@ include Core/$(BOARD).mk
 PREFIX?=arm-none-eabi-
 CC=$(PREFIX)gcc
 AS=$(PREFIX)as
+SZ=$(PREFIX)size
 OBJCOPY=$(PREFIX)objcopy
 BUILD_DIR = build
+CP = $(PREFIX)objcopy
+HEX = $(CP) -O ihex
+BIN = $(CP) -O binary -S
 
 DEBUG = 1
 OPT = -Og
@@ -43,7 +46,7 @@ OBJECTS += $(addprefix $(BUILD_DIR)/,$(MAIN_CORE:.c=.o))
 ASM_OBJECTS = $(addprefix $(BUILD_DIR)/,$(ASM_SOURCES:.s=.o))
 DIRECTORES = $(sort $(dir $(OBJECTS)))
 
-all: $(DIRECTORES) $(OBJECTS) $(BUILD_DIR)/knxboard.elf
+all: $(DIRECTORES) $(OBJECTS) $(BUILD_DIR)/knxboard.elf $(BUILD_DIR)/knxboard.bin $(BUILD_DIR)/knxboard.hex
 
 
 $(DIRECTORES):
@@ -69,13 +72,16 @@ $(ASM_OBJECTS): $(ASM_SOURCES) $(DIRECTORES)
 
 
 $(BUILD_DIR)/knxboard.elf: $(OBJECTS) $(ASM_OBJECTS) Makefile
+	$(info BUILD knxboard.elf)
 	$(CC) $(OBJECTS) $(ASM_OBJECTS) $(LDFLAGS) -o $@
 	$(SZ) $@
 
-$(BUILD_DIR)/%.hex: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
+$(BUILD_DIR)/knxboard.hex: $(BUILD_DIR)/knxboard.elf
+	$(info BUILD knxboard.hex)
 	$(HEX) $< $@
 	
-$(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
+$(BUILD_DIR)/knxboard.bin: $(BUILD_DIR)/knxboard.elf
+	$(info BUILD knxboard.bin)
 	$(BIN) $< $@
 
 #$(BUILD_DIR)/Core/$(BOARD)/Core/Src/%.o: %.c Makefile | $(BUILD_DIR) 
@@ -108,6 +114,6 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 clean:
 	rm -fr build
 
-install: outdir $(OD)/stm32/knxboard.elf $(OD)/stm32/knxboard.bin $(OD)/stm32/knxboard.hex
-	st-flash write bin/stm32/knxboard.bin 0x8000000
+install: $(BUILD_DIR)/knxboard.bin
+	st-flash write $(BUILD_DIR)/knxboard.bin 0x8000000
 	st-flash reset
