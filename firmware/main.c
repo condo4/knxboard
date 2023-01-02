@@ -1,24 +1,31 @@
 #include <main.h>
 #include <main.c>
+#include <stdio.h>
+#include <errno.h>
+#include <sys/unistd.h>
 
-void _close(void)
+int _write(int file, char *ptr, int len)
 {
-}
-
-void _lseek(void)
-{
-
-}
-void _read(void)
-{
-}
-void _write(void)
-{
+    static const char ret = '\r';
+    if (file == STDOUT_FILENO || file == STDERR_FILENO)
+    {
+        int i = 0;
+        for (i = 0; i < len; i++)
+        {
+            if (ptr[i] == '\n')
+            {
+                HAL_UART_Transmit(&huart2, &ret, 1, HAL_MAX_DELAY);
+            }
+            HAL_UART_Transmit(&huart2, &ptr[i], 1, HAL_MAX_DELAY);
+        }
+        return i;
+    }
+    errno = EIO;
+    return -1;
 }
 
 int main(void){
     static uint32_t last_tick = 0;
-    static uint32_t wait = 100;
     static const uint8_t buffer[] = "A";
     HAL_Init();
     SystemClock_Config();
@@ -31,11 +38,11 @@ int main(void){
     HAL_GPIO_WritePin(KNX_PROG_LED_GPIO_Port, KNX_PROG_LED_Pin, GPIO_PIN_SET);
 
     while (1){
-        if(HAL_GetTick() > (last_tick + wait) || last_tick >  HAL_GetTick())/* Meas each 5s */
+        if(HAL_GetTick() > (last_tick + 1000) || last_tick >  HAL_GetTick()) /* Meas each 1s */
         {
             last_tick = HAL_GetTick();
             HAL_GPIO_TogglePin(KNX_PROG_LED_GPIO_Port, KNX_PROG_LED_Pin);
-            HAL_UART_Transmit(&huart2, buffer, 1, HAL_MAX_DELAY);
+            printf("Tick: %i\n", last_tick / 1000);
         }
     }
 }
