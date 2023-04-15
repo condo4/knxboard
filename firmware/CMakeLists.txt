@@ -4,8 +4,10 @@ cmake_minimum_required(VERSION 3.15)
 
 project(knxboard ASM C)
 
-set(CMAKE_ASM_COMPILER arm-none-eabi-gcc)
-set(CMAKE_C_COMPILER arm-none-eabi-gcc)
+set(SDK_PATH /opt/arm-gnu-toolchain-12.2.mpacbti-bet1-x86_64-arm-none-eabi/bin/)
+
+set(CMAKE_ASM_COMPILER ${SDK_PATH}arm-none-eabi-gcc)
+set(CMAKE_C_COMPILER ${SDK_PATH}arm-none-eabi-gcc)
 
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR ARM)
@@ -117,7 +119,7 @@ target_link_options(${EXECUTABLE} PRIVATE
 
 add_custom_command(TARGET ${EXECUTABLE}
    POST_BUILD
-   COMMAND arm-none-eabi-size ${EXECUTABLE}
+   COMMAND ${SDK_PATH}arm-none-eabi-size ${EXECUTABLE}
 )
 
 add_custom_target(flash
