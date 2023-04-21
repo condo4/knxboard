@@ -24,6 +24,7 @@ if(KNXBOARDV1)
     set(STKNX       OFF)
     set(NCN5130     OFF)
     set(BOARD       "KNXBOARDV1")
+    set(PHY_NAME    "TPUART")
     set(HAL_NAME    "STM32L4xx")
     set(MCU_NAME    "STM32L432")
     set(MCU_VER     "KCUx")
@@ -35,6 +36,7 @@ elseif(NUCLEOL432)
     set(STKNX       ON)
     set(NCN5130     OFF)
     set(BOARD       "NUCLEOL432")
+    set(PHY_NAME    "STKNX")
     set(HAL_NAME    "STM32L4xx")
     set(MCU_NAME    "STM32L432")
     set(MCU_VER     "KCUx")
@@ -43,18 +45,28 @@ else()
     set(STKNX       OFF)
     set(NCN5130     ON)
     set(BOARD       "KNXBOARDV4")
+    set(PHY_NAME    "NCN5130")
     set(HAL_NAME    "STM32G4xx")
     set(MCU_NAME    "STM32G491")
     set(MCU_VER     "KEUx")
 endif()
 message(STATUS "Build for ${BOARD}")
 
-file(GLOB SOURCE_CORE       "Core/${BOARD}/Core/Src/s*.c")
+set(SOURCE_CORE
+    Core/${BOARD}/Core/Src/gpio.c
+    Core/${BOARD}/Core/Src/stm32g4xx_hal_msp.c
+    Core/${BOARD}/Core/Src/stm32g4xx_it.c
+    Core/${BOARD}/Core/Src/system_stm32g4xx.c
+    Core/${BOARD}/Core/Src/usart.c
+    Core/${BOARD}/Core/Src/tim.c
+)
 file(GLOB DRIVER_CORE       "Core/${BOARD}/Drivers/*/Src/*_hal*.c")
 file(GLOB DRIVER_CORE_RM    "Core/${BOARD}/Drivers/*/Src/*_hal*_template.c")
 file(GLOB MAIN_CORE         "*.c")
 file(GLOB ASM_SOURCES       "Core/${BOARD}/startup_s*.s")
-
+file(GLOB KNXSTACK          "libknx/*.[ch]")
+file(GLOB PHY_SRC           "libknx/${PHY_NAME}/*.c")
+include_directories("libknx")
 
 if(DRIVER_CORE_RM)
 message(STATUS "DRIVER_CORE = ${DRIVER_CORE}")
@@ -68,6 +80,8 @@ set(SRC_FILES
    ${DRIVER_CORE}
    ${MAIN_CORE}
    ${ASM_SOURCES}
+   ${KNXSTACK}
+   ${PHY_SRC}
 )
 
 set(EXECUTABLE ${PROJECT_NAME}.elf)

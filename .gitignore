@@ -2,3 +2,4 @@
 *.bak
 hardware/KnxBoard-backups/
 firmware/build/
+CMakeLists.txt.user*

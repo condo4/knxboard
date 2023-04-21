@@ -1,11 +1,13 @@
 #include "ring_buffer.h"
 #include <main.h>
 #include <gpio.h>
+#include <usart.h>
 #include <stdio.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <sys/times.h>
 #include <sys/unistd.h>
+#include "console.h"
 
 extern UART_HandleTypeDef huart2;
 #define CONSOLE_HUART &huart2
@@ -105,3 +107,22 @@ int _write(int file, char *ptr, int len)
     errno = EIO;
     return -1;
 }
+
+void CONSOLE_TxCpltCallback(UART_HandleTypeDef *UartHandle)
+{
+    /* Set transmission flag: transfer complete */
+    console_start_next_xfer();
+}
+
+
+void console_init()
+{
+    MX_USART2_UART_Init();
+    huart2.TxCpltCallback = CONSOLE_TxCpltCallback;
+}
+
+int _close (int file) { return 0; }
+int _fstat (int file, void * st) { return 0; }
+int _isatty (int fd) { return 0; }
+int _lseek (int file, int ptr, int dir) { return 0; };
+int _read (int file, void * ptr, size_t len) { return 0; };

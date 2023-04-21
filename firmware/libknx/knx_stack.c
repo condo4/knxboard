@@ -21,6 +21,7 @@ void knx_init(void)
 
 void knx_loop(void)
 {
+    Ph_Loop();
     L_Loop();
 }
 

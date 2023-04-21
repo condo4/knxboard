@@ -2,9 +2,7 @@
 #define __DEBUG_H__
 
 #include "console.h"
-//#define DEBUG_STKNX_READ
-//#define DEBUG_STKNX_WRITE
-#define DEBUG_LAYER_PHYSICAL
+//#define DEBUG_LAYER_PHYSICAL
 #define DEBUG_LAYER_LOW_DATA_LINK
 #define DEBUG_LAYER_DATA_LINK
 #define DEBUG_LAYER_NETWORK

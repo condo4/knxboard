@@ -75,13 +75,19 @@ void L_Data__req(uint8_t ack_request, AddressType address_type, KnxAddress desti
 
 #ifdef DEBUG_LAYER_LOW_DATA_LINK
     console_print_string("<--- ");
-    console_print_bytes(TX, octet_count + 7);
+    console_print_bytes((uint8_t *)TX, octet_count + 7);
     console_print_string("\r\n");
 #endif
 
     /* For transmit, don't follow Exactelly Ph_Data Service as describe in documention, I find
      * inadapted to transmition by timer */
-    Ph_Knx_Start_Transmit(priority, &TX[0], octet_count + 7);
+    //Ph_Knx_Start_Transmit(priority, &TX[0], octet_count + 7);
+    /* TODO */
+    console_print_string("TODO ");
+    console_print_string(__FILE__);
+    console_print_string(" ");
+    console_print_int(__LINE__);
+    console_print_string("\r\n");
 }
 
 void L_Data__con(AddressType address_type, KnxAddress destination_address, FrameFormat frame_format,
@@ -171,6 +177,8 @@ void L_Data__ind(uint8_t ack_request, AddressType address_type, KnxAddress desti
                     Ph_Data__req(Req_ack_char, FRAME_ACK);
                 }
                 _mode = Data_Individual;
+
+
             }
         }
         else /* Multicast */

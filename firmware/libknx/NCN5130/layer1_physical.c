@@ -1,4 +1,18 @@
 #include <stdbool.h>
+#include <stddef.h>
+#include <main.h>
+#include <usart.h>
+#include <tim.h>
+#include <console.h>
+#include <layer1_physical.h>
+#include <layer2_data_link.h>
+#include <object_device.h>
+#include <debug.h>
+#include <stdio.h>
+
+#ifdef DEBUG_LAYER_PHYSICAL
+#define DEBUG
+#endif
 
 #define STATE_RESET         0
 // Entered after Power On Reset (POR) or in response to a U_Reset__req() service issued by the host controller. In this
@@ -29,15 +43,35 @@ static unsigned char m_recive_msg[64];
 static unsigned char m_rx_index = 0;
 
 
+#define RX_BUS_BUSY -1
+#define RX_BUS_FREE 0
+#define RX_FRAME_IN_PROPGRESS 1;
+static int m_rx_state = RX_BUS_BUSY;
+static unsigned char m_rx_byte;
+
+
+
 
 /* SERVICES FROM HOST CONTROLLER */
 void send_to_controler(size_t size)
 {
-    // TODO
+    int i;
+    for(i=0; i < size; i++)
+    {
+#ifdef DEBUG
+        console_print_char('>');
+        console_print_hex(m_send_msg[i]);
+        console_print_string("\r\n");
+#endif
+        HAL_UART_Transmit(&huart1, &m_send_msg[i], 1, HAL_MAX_DELAY);
+    }
 }
 
 void U_Reset__req()
 {
+#ifdef DEBUG
+    console_print_string("U_Reset__req\r\n");
+#endif
     m_state = STATE_RESET;
     m_send_msg[0] = 0x01;
     send_to_controler(1);
@@ -136,7 +170,7 @@ void U_PollingState__req(unsigned char slot, unsigned char addr_hight, unsigned 
     m_send_msg[0] = 0xE0 | (slot & 0x0F);
     m_send_msg[1] = addr_hight;
     m_send_msg[2] = addr_low;
-    m_send_msg[4] = state;
+    m_send_msg[3] = state;
     send_to_controler(4);
 }
 
@@ -162,41 +196,17 @@ void U_L_DataEnd__req(unsigned char index, unsigned char fcs)
     send_to_controler(2);
 }
 
-/*  SERVICES TO HOST CONTROLLER */
-
-/*      DLL (LAYER 2) SERVICES (DEVICE IS TRANSPARENT) */
-void L_Data_Standard__ind(bool not_repeted, unsigned char priority, unsigned char *data, unsigned char size)
-{
-
-}
-
-void L_Data_Extended__ind(bool not_repeted, unsigned char priority, unsigned char *data, unsigned char size)
-{
-
-}
-
-void L_Poll_Data__ind(unsigned char *data, unsigned char size)
-{
-
-}
-
-/*      ACKNOWLEDGE SERVICES (DEVICE IS TRANSPARENT IN BUS MONITOR MODE) */
-void L_Ackn__ind(unsigned char ack)
-{
-
-}
-
-void L_Data__con(bool confirmation)
-{
-
-}
 
 /*      CONTROL SERVICES – DEVICE SPECIFIC */
 
 void U_Reset__ind() // Called from hardware
 {
+#ifdef DEBUG
+    console_print_string("U_Reset__ind\r\n");
+#endif
     m_state = STATE_NORMAL;
-    // TODO
+    m_rx_state = RX_BUS_FREE;
+    Ph_Reset__con(p_ok);
 }
 
 
@@ -232,117 +242,91 @@ void U_SystemStat__ind(unsigned char byte)
     // TODO:
 }
 
-void unsigned char recive_frame_size()
+
+void device_prog_mode_change(bool newvalue)
 {
-    if(m_recive_msg[0] & 0x01 == 0x01)
-    {
-        /* Not L_Data, L_Poll nor L_Ackn */
-        if(m_recive_msg[0] == 0x4B)
-        {
-            /* U_SystemStat.ind */
-            return 2;
-        }
-        else
-        {
-            return 1;
-        }
-    }
-    else if(m_recive_msg[0] & 0x10 == 0x00)
-    {
-        /* L_Ackn */
-        return 1;
-    }
-    else if(m_recive_msg[0] == 0xF0)
-    {
-        /* L_Poll_Data.ind */
-        // TODO
-        return 0;
-    }
-    else if(m_recive_msg[0] & 0x80 == 0x80)
-    {
-        /* L_Data_Standard.ind */
-        // TODO
-        return 0;
-    }
-    else
-    {
-        /* L_Data_Extended.ind */
-        // TODO
-        return 0;
-    }
+    printf((newvalue) ? ("Mode Prog: ON\n") : ("Mode Prog: OFF\n"));
+    HAL_GPIO_WritePin(KNX_PROG_LED_GPIO_Port, KNX_PROG_LED_Pin,
+                      (newvalue) ? (GPIO_PIN_SET) : (GPIO_PIN_RESET));
 }
 
+uint32_t millis() {
+    return HAL_GetTick();
+}
 
 void recive_from_controler(unsigned char byte)
 {
-    m_recive_msg[m_rx_index++] = byte;
-    /* Just check if we need to ACK */
-    if(m_rx_index == 4) //TODO
+    if(htim6.Instance->CR1 && TIM_CR1_CEN)
     {
-        // TODO
-        U_Ackn__req(/* nack */ true, /* busy */ false, /* addressed */ true);
+        HAL_TIM_Base_Stop(&htim6);
     }
+    m_recive_msg[m_rx_index++] = byte;
 
-    if(m_rx_index < recive_frame_size())
+#ifdef DEBUG
+    console_print_hex(byte);
+    console_print_char(' ');
+#endif
+
+    /* DLL (LAYER 2) SERVICES (DEVICE IS TRANSPARENT) */
+    if((m_recive_msg[0] & 0xD3) == 0x90)
     {
-        /* Wait for more bytes */
+        __HAL_TIM_SET_COUNTER(&htim6, 1);
+        HAL_TIM_Base_Start_IT(&htim6);
         return;
     }
-
-    /* Frame is complete */
-    /*      DLL (LAYER 2) SERVICES (DEVICE IS TRANSPARENT) */
-    if(m_recive_msg[0] & 0xD3 == 0x90)
+    else if((m_recive_msg[0] & 0xD3) == 0x10)
     {
-        L_Data_Standard__ind((m_recive_msg[0] & 0x20) >> 5, (m_recive_msg[0] & 0x0C) >> 2, &m_recive_msg[1], m_rx_index - 1);
-    }
-    else if(m_recive_msg[0] & 0xD3 == 0x10)
-    {
-        L_Data_Extended__ind((m_recive_msg[0] & 0x20) >> 5, (m_recive_msg[0] & 0x0C) >> 2, &m_recive_msg[1], m_rx_index - 1);
+        __HAL_TIM_SET_COUNTER(&htim6, 1);
+        HAL_TIM_Base_Start_IT(&htim6);
+        return;
     }
     else if(m_recive_msg[0] == 0xF0)
     {
-        L_Poll_Data__ind(m_recive_msg[1], m_rx_index - 1);
+        /* TODO */
+        printf("TODO: recive_from_controler %i\n", __LINE__);
+        //L_Poll_Data__ind(&m_recive_msg[1], m_rx_index - 1);
     }
     /*  ACKNOWLEDGE SERVICES (DEVICE IS TRANSPARENT IN BUS MONITOR MODE) */
-    else if(m_recive_msg[0] & 0x33 == 0x00)
+    else if((m_recive_msg[0] & 0x33) == 0x00)
     {
-        L_Ackn__ind(m_recive_msg[0]);
+        //L_Ackn__ind(m_recive_msg[0]);
     }
-    else if(m_recive_msg[0] & 0x7F == 0x0B)
+    else if((m_recive_msg[0] & 0x7F) == 0x0B)
     {
-        L_Data__con(m_recive_msg[0] & 0x80 >> 7);
+        // TODO: L_Data__con(m_recive_msg[0] & 0x80 >> 7);
+        printf("TODO: recive_from_controler %i\n", __LINE__);
     }
     /*  CONTROL SERVICES – DEVICE SPECIFIC */
     else if(m_recive_msg[0] == 0x03)
     {
         U_Reset__ind();
     }
-    else if(m_recive_msg[0] & 0x07 == 0x07)
+    else if((m_recive_msg[0] & 0x07) == 0x07)
     {
         U_State__ind(
             m_recive_msg[0] & 0x80 >> 7,
             m_recive_msg[0] & 0x40 >> 6,
             m_recive_msg[0] & 0x20 >> 5,
             m_recive_msg[0] & 0x10 >> 4,
-            m_recive_msg[0] & 0x08 >> 3,
+            m_recive_msg[0] & 0x08 >> 3
         );
     }
-    else if(m_recive_msg[0] & 0x17 == 0x13)
+    else if((m_recive_msg[0] & 0x17) == 0x13)
     {
         U_FrameState__ind(
             m_recive_msg[0] & 0x80 >> 7,
             m_recive_msg[0] & 0x40 >> 6,
-            m_recive_msg[0] & 0x20 >> 5,
-            m_recive_msg[0] & 0x08 >> 3,
+            m_recive_msg[0] & 0x20 >> 5/*,
+            m_recive_msg[0] & 0x08 >> 3*/
         );
     }
-    else if(m_recive_msg[0] & 0x83 == 0x01)
+    else if((m_recive_msg[0] & 0x83) == 0x01)
     {
         U_Configure__ind(
             m_recive_msg[0] & 0x20 >> 5,
             m_recive_msg[0] & 0x10 >> 4,
             m_recive_msg[0] & 0x08 >> 3,
-            m_recive_msg[0] & 0x04 >> 2,
+            m_recive_msg[0] & 0x04 >> 2
         );
     }
     else if(m_recive_msg[0] == 0xCB)
@@ -360,4 +344,125 @@ void recive_from_controler(unsigned char byte)
 
     /* Ready for next frame */
     m_rx_index = 0;
+}
+
+void EOF_TIMER_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+    if(htim == &htim6)
+    {
+        if(htim6.Instance->CR1 && TIM_CR1_CEN)
+        {
+#ifdef DEBUG
+            console_print_string("/\r\n");
+#endif
+            HAL_TIM_Base_Stop(&htim6);
+            __HAL_TIM_SET_COUNTER(&htim6, 1);
+
+            if((m_recive_msg[0] & 0xD3) == 0x90)
+            {
+                /* Standard Frame recived */
+                L_Data__ind(
+                    1,
+                    ((m_recive_msg[5] & 0x80) >> 7),
+                    ((m_recive_msg[3] << 8) | m_recive_msg[4]),
+                    ((m_recive_msg[0] & 0x80) >> 7),
+                    &m_recive_msg[6],
+                    (m_recive_msg[5] & 0x0F) + 1,
+                    (m_recive_msg[0] & 0x0C) >> 2,
+                    ((m_recive_msg[1] << 8) | m_recive_msg[2])
+                );
+            }
+
+            m_rx_index = 0;
+        }
+    }
+}
+
+
+
+void NCN5130_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart == &huart1)
+    {
+        recive_from_controler(m_rx_byte);
+        if(HAL_UART_Receive_IT(&huart1, (unsigned char *)(&m_rx_byte), 1) != HAL_OK)
+        {
+            printf("!!! Error on start_next_telegram, Can't HAL_UART_Receive_IT in start_tpuart_reception\n");
+        }
+    }
+}
+
+void Ph_Init(void)
+{
+    MX_TIM6_Init();
+    MX_USART1_UART_Init();
+
+    htim6.PeriodElapsedCallback = EOF_TIMER_PeriodElapsedCallback;
+    huart1.RxCpltCallback = NCN5130_RxCpltCallback;
+
+    __HAL_TIM_SET_COUNTER(&htim6, 1);
+    HAL_TIM_Base_Start_IT(&htim6); /* Don't understand why we need this */
+
+    while(HAL_GPIO_ReadPin(KNX_SAVEB_GPIO_Port, KNX_SAVEB_Pin) == 0)
+    {
+        // Wait for SAVEB
+    }
+
+    /* Start UART Reader */
+    if(HAL_UART_Receive_IT(&huart1, (unsigned char *)(&m_rx_byte), 1) != HAL_OK)
+    {
+        printf("!!! Error on tpuart_usart_setup, Can't HAL_UART_Receive_IT in start_tpuart_reception\n");
+    }
+}
+
+void Ph_Loop(void)
+{
+    static bool knx_btn_state = false;
+
+    if (HAL_GPIO_ReadPin(KNX_PROG_BTN_GPIO_Port, KNX_PROG_BTN_Pin) == GPIO_PIN_SET)
+    {
+        if (!knx_btn_state)
+        {
+            knx_btn_state = true;
+            device_prog_mode_set(!device_prog_mode());
+        }
+    }
+    else
+    {
+        if (knx_btn_state)
+        {
+            knx_btn_state = false;
+        }
+    }
+}
+
+void Ph_Reset__req()
+{
+    U_Reset__req();
+}
+
+void Ph_Data__req(Ph_Data_Req_Class p_class, uint8_t p_data)
+{
+    /* Since NCN5130 Buffering of Sent Data Frames, consider always free*/
+    /* Start to transmit first byte */
+    switch(p_class)
+    {
+        case Req_start_of_Frame:
+        case Req_inner_Frame_char:
+            /* TODO:
+             * Send a Byte to the Bus,
+             * when it's OK, call Ph_Data__Confirm
+             * Ph_Data__Confirm will send the next one
+             */
+            break;
+        case Req_ack_char:
+            U_Ackn__req(/* nack */ true, /* busy */ false, /* addressed */ true);
+            break;
+        case Req_poll_data_char:
+            /* TODO */
+            break;
+        case Req_fill_char:
+            /* TODO */
+            break;
+    }
 }
