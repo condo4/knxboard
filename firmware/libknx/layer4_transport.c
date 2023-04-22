@@ -804,11 +804,11 @@ void T_Data_Broadcast__ind(uint8_t hop_count_type, uint8_t octet_count, Priority
 #ifdef DEBUG_LAYER_TRANSPORT
     console_print_string("T_Data_Broadcast__ind(");
     console_print_int(hop_count_type);
-    console_print_char(',');
+    console_print_string(", ");
     console_print_int(octet_count);
-    console_print_char(',');
+    console_print_string(", ");
     print_priority(priority);
-    console_print_char(',');
+    console_print_string(", ");
     print_source_address(source_address);
     console_print_string(", [");
     for (int i = 0; i < octet_count - 1; i++)

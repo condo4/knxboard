@@ -31,7 +31,7 @@ static Priority _priority;
 static KnxAddress _source_address;
 static uint8_t *_nsdu;
 
-
+static uint8_t _tx_octet_count;
 void L_Data__req(uint8_t ack_request, AddressType address_type, KnxAddress destination_address,
                  FrameFormat frame_format, uint8_t *lsdu, uint8_t octet_count, Priority priority,
                  KnxAddress source_address)
@@ -83,11 +83,9 @@ void L_Data__req(uint8_t ack_request, AddressType address_type, KnxAddress desti
      * inadapted to transmition by timer */
     //Ph_Knx_Start_Transmit(priority, &TX[0], octet_count + 7);
     /* TODO */
-    console_print_string("TODO ");
-    console_print_string(__FILE__);
-    console_print_string(" ");
-    console_print_int(__LINE__);
-    console_print_string("\r\n");
+    tx_index = 0;
+    _tx_octet_count = octet_count;
+    Ph_Data__req(Req_start_of_Frame, TX[tx_index++]);
 }
 
 void L_Data__con(AddressType address_type, KnxAddress destination_address, FrameFormat frame_format,
@@ -97,7 +95,7 @@ void L_Data__con(AddressType address_type, KnxAddress destination_address, Frame
     if (l_status == l_ok)
     {
         /* Send next byte */
-        if (tx_index > octet_count)
+        if (tx_index > _tx_octet_count)
         {
             /* Sent full frame successfully */
             tx_busy = 0;

@@ -104,6 +104,7 @@ void N_Data_Broadcast__req(uint8_t ack_request, uint8_t hop_count_type, uint8_t 
                            Priority priority, uint8_t *nsdu)
 {
 #if defined(DEBUG_LAYER_NETWORK)
+    int i;
     console_print_string("N_Data_Broadcast__req(");
     console_print_int(ack_request);
     console_print_string(", ");
@@ -113,7 +114,7 @@ void N_Data_Broadcast__req(uint8_t ack_request, uint8_t hop_count_type, uint8_t 
     console_print_string(", ");
     print_priority(priority);
     console_print_string(", [");
-    for (int i = 0; i < octet_count - 1; i++)
+    for (i = 0; i < octet_count - 1; i++)
     {
         console_print_hex(nsdu[i]);
         console_print_char(' ');

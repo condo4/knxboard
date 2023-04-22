@@ -48,6 +48,7 @@ static unsigned char m_rx_index = 0;
 #define RX_FRAME_IN_PROPGRESS 1;
 static int m_rx_state = RX_BUS_BUSY;
 static unsigned char m_rx_byte;
+static bool m_need_confirmation = false;
 
 
 
@@ -366,8 +367,8 @@ void EOF_TIMER_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
                     ((m_recive_msg[5] & 0x80) >> 7),
                     ((m_recive_msg[3] << 8) | m_recive_msg[4]),
                     ((m_recive_msg[0] & 0x80) >> 7),
-                    &m_recive_msg[6],
-                    (m_recive_msg[5] & 0x0F) + 1,
+                    &m_recive_msg[5],
+                    (m_recive_msg[5] & 0x0F) + 2,
                     (m_recive_msg[0] & 0x0C) >> 2,
                     ((m_recive_msg[1] << 8) | m_recive_msg[2])
                 );
@@ -392,6 +393,11 @@ void NCN5130_RxCpltCallback(UART_HandleTypeDef *huart)
     }
 }
 
+void NCN5130_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+    Ph_Data__con(p_ok);
+}
+
 void Ph_Init(void)
 {
     MX_TIM6_Init();
@@ -399,6 +405,7 @@ void Ph_Init(void)
 
     htim6.PeriodElapsedCallback = EOF_TIMER_PeriodElapsedCallback;
     huart1.RxCpltCallback = NCN5130_RxCpltCallback;
+    huart1.TxCpltCallback = NCN5130_TxCpltCallback;
 
     __HAL_TIM_SET_COUNTER(&htim6, 1);
     HAL_TIM_Base_Start_IT(&htim6); /* Don't understand why we need this */
@@ -419,7 +426,7 @@ void Ph_Loop(void)
 {
     static bool knx_btn_state = false;
 
-    if (HAL_GPIO_ReadPin(KNX_PROG_BTN_GPIO_Port, KNX_PROG_BTN_Pin) == GPIO_PIN_SET)
+    if (HAL_GPIO_ReadPin(KNX_PROG_BTN_GPIO_Port, KNX_PROG_BTN_Pin) == GPIO_PIN_RESET)
     {
         if (!knx_btn_state)
         {
@@ -441,6 +448,13 @@ void Ph_Reset__req()
     U_Reset__req();
 }
 
+
+void Ph_Data__con(P_Status p_status)
+{
+    console_print_char('+');
+    L_Data__con(0,0,0,0,0,0,0,l_ok);
+}
+
 void Ph_Data__req(Ph_Data_Req_Class p_class, uint8_t p_data)
 {
     /* Since NCN5130 Buffering of Sent Data Frames, consider always free*/
@@ -454,6 +468,11 @@ void Ph_Data__req(Ph_Data_Req_Class p_class, uint8_t p_data)
              * when it's OK, call Ph_Data__Confirm
              * Ph_Data__Confirm will send the next one
              */
+            m_send_msg[0] = p_data;
+            m_need_confirmation = true;
+            console_print_char('>');
+            console_print_hex(p_data);
+            HAL_UART_Transmit_IT(&huart1, &m_send_msg[0], 1);
             break;
         case Req_ack_char:
             U_Ackn__req(/* nack */ true, /* busy */ false, /* addressed */ true);
