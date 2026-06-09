@@ -1,0 +1,70 @@
+(footprint "KNX_Connector"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0.5 0)
+		(layer "F.SilkS")
+		(uuid "e01d3686-d84e-499f-a80e-9d444d7e259a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "KNX_Connector"
+		(at 0 -0.5 0)
+		(layer "F.Fab")
+		(uuid "ab027122-2627-4eeb-9ee6-490525b73047")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bf3e5c5-9cf2-464d-b69e-3d46d59d3b6e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ca61b493-8b4e-4711-9246-e07bbfe50d31")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(pad "1" thru_hole circle
+		(at -2.875 -3.81)
+		(size 3 3)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "27c83f92-05de-4dcd-a6ec-9e3fbe5f7ed3")
+	)
+	(pad "2" thru_hole circle
+		(at 2.875 -3.81)
+		(size 3 3)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f34bf04f-3bba-41c5-a393-5070f28cf98a")
+	)
+	(embedded_fonts no)
+)
