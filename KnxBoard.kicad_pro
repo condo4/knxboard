@@ -532,7 +532,7 @@
       "idf": "",
       "netlist": "",
       "plot": "JLCPCB/",
-      "pos_files": "",
+      "pos_files": "KnxBoardPlacement/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -603,13 +603,13 @@
           "group_by": true,
           "label": "Manufacturer_Part_Number",
           "name": "Manufacturer_Part_Number",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -670,6 +670,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB",
+          "name": "JLCPCB",
+          "show": true
         }
       ],
       "filter_string": "",
