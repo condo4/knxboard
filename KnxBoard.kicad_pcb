@@ -243,10 +243,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "MCS04020C1000FE000"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3d9583c-c1d3-4729-9244-b6a90e5f46d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd1aeb0c-cf24-4a19-abc2-5adedf8d1003")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -534,10 +553,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "716554a0-d898-4721-b7f9-65423bd25479")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/714a7bf9-a503-4c36-8ab6-15a1d7d0f626")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -732,6 +770,12 @@
 		(path "/65fd51a6-df34-4cfe-98ab-91e8767f94a3")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -910,10 +954,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "LB2518T221M"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "162b656e-de31-46dd-969b-e836aae0f562")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/c60e819a-941f-4d6d-9c2d-4a814bd2c4d8")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1203,10 +1266,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2188111"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68e9f211-c23e-4cf8-bc5f-d2fc76224287")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a0f78d84-b995-4b13-8846-9d559b647dc5")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1954,10 +2036,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b30305bb-5694-4933-add5-8938893a3773")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d9db3b1f-752c-4899-8de6-1af6dc4b7cd0")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2136,10 +2237,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7152556b-5711-47b2-bedf-64818fd22cb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0920b0b4-1935-43fe-8d6f-3db6e388881a")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2318,10 +2438,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "GRT21BR61E226ME13L"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2bebae6-f670-4414-9fb0-89876056287c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/081c0944-2c78-4a9c-8222-31a416eedc40")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3181,6 +3320,12 @@
 		(path "/21b86f55-0bd2-4483-a8b3-0d3d5d17c914")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3359,10 +3504,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2654001"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04b79f36-906c-45aa-977a-a0d5c695ce00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/bfe8a572-3db7-4a12-9a74-015fe261cbb2")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3541,10 +3705,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2654001"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b18f97ab-6545-4cad-9e15-8e8dead55658")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4c2628eb-6e08-4269-a00f-e6945f8e2937")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3723,10 +3906,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2654001"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a2b2229-717a-4a59-880b-346c54ac5156")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3a66c708-f18a-4226-97ea-b64902826c3a")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3905,10 +4107,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac08dc95-bab7-4f66-900a-b8fd553a0b75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/fcaf9816-9ba1-4b65-a692-40bce42e311e")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4087,10 +4308,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "25121WJ0270T4E"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e777888d-43da-4168-8e6e-db4c06d20c3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/18a220b3-9083-463d-a45e-a1229964eb1a")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4269,10 +4509,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e937acf-6ac3-49d3-8431-01c81949029d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a6111cab-497c-4a9d-b6d6-aee216182c02")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4451,10 +4710,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "365810dd-1f1e-4048-af23-91dadbd4afa6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3c6f3f90-ad35-4d06-8fc5-f77ba38fcec3")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4623,6 +4901,12 @@
 		(path "/46cf42ac-8d56-4620-8b32-c2c04a628291")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5460,10 +5744,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C482096"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ab44e93-8a3a-48de-9ba9-991a700a9baf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3ec3bcac-b24f-431a-9e85-7a5b01b06360")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6097,10 +6400,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a90d522e-1ad8-4270-9bac-9332a57c5f24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/9bc7cc6e-18e8-4c15-a1fa-1d34073d7df4")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6292,10 +6614,29 @@
 				)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b11b498-2709-4c6d-b7e7-f23c469bdfb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/265eb8fc-fa72-4c42-9c03-b0c0675f8a75")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6525,10 +6866,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2077491"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac3982e6-9060-4527-a4a3-69667fc1dec7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dad2bfe8-4ed3-4f16-8c04-60dc5841c749")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7474,10 +7834,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2077491"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b93ec88-37fd-4101-97d0-9c0e7989509a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0b23eafc-e96d-4649-b2c0-24a15a76f1a1")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7656,10 +8035,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2654001"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a916b64f-0ca8-4dc3-a358-ab2dae02f964")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c18c1e22-9dbf-4961-b134-32728d1d8249")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7753,7 +8151,7 @@
 		(descr "Through hole straight pin header, 1x11, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x11 2.54mm single row")
 		(property "Reference" "J4"
-			(at 0 28.64 90)
+			(at 0 28.865 90)
 			(layer "F.SilkS")
 			(uuid "b24de46f-aad5-425d-88d5-afa65134ffbe")
 			(effects
@@ -7828,6 +8226,12 @@
 		(path "/724931c3-c766-4edb-903c-a8dab7ec7b18")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8204,6 +8608,12 @@
 		(path "/22897a91-7580-4060-8b2d-d1c3867642ed")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8382,10 +8792,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "GRJ21BC72A105KE11L "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14638200-c87e-437d-bb47-e4122b11ddb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7c71dae6-463d-4a54-80c3-305217bccba8")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8564,10 +8993,29 @@
 				)
 			)
 		)
+		(property "Manufacturer_Part_Number" "GRM21BC71E106KE11L"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c050304f-c0e4-4cac-bb55-2333a63df62e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd968573-a69d-444d-a2df-9723d57b3bd4")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8746,10 +9194,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06db2683-143f-4c15-8c27-c9c4ce91e9e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c2ff92d0-b0c7-4ff9-80ab-8ce5c2263e01")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8928,10 +9395,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fe9a941-d593-49de-a31f-b84264fbbdab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/9e8ac306-2e50-47bc-a6c3-684674b1019b")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9110,10 +9596,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2189775"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0719550-f8ca-4825-85da-79c21530ae67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/caebc233-121c-42be-9665-ff84b3b6d5f2")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9392,10 +9897,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C223324"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36d93936-0cf1-46cd-9a29-fc48c3ebf986")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/3db7d4a6-8fe9-43f1-a7d6-4178e7ff413f")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10092,10 +10616,29 @@
 				)
 			)
 		)
+		(property "JLCPCB" "C2169603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe5794d3-cb70-4764-a381-ca641fa9f218")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f161a15-1f4d-4023-836e-d24e03d1dfb6")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10264,6 +10807,12 @@
 		(path "/a7ac611c-b070-4b5a-889c-c636a4309b89")
 		(sheetname "/")
 		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "6" "5" "4")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10507,6 +11056,501 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:CP_Elec_6.3x7.7"
+		(layer "B.Cu")
+		(uuid "3148194d-3ba2-425f-9ccb-0c066ea8180c")
+		(at 127.075 151.4 180)
+		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
+		(tags "capacitor electrolytic")
+		(property "Reference" "C19"
+			(at 0 4.35 0)
+			(layer "B.SilkS")
+			(uuid "7ce331f8-1ea6-42f4-9bba-10cd54a278bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "100uF 35 Volt"
+			(at 0 -4.35 0)
+			(layer "B.Fab")
+			(uuid "df659359-c803-4441-b67c-822a91d2e797")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Lelon-VZH221M1CTT0607L/C7442652"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "da71bab2-a07e-4cd4-807e-91bcfadab02e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fa261f4d-1d14-4b92-a26c-87fb7a3da1bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/SMD/elec_round_polarized"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c7b62901-a8e3-4d5a-b958-3a0f37930d78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "661-EMZA350A101MF80S "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ffef6e78-3ff5-406e-91ea-b180d95fb341")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "VZH221M1CTT-0607L"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9683e73b-e233-4009-bcd0-161faedc6507")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "JLCPCB" "C7442652"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f835d371-841f-4f89-bda1-3c01754185a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "CP_*")
+		(path "/0ff49560-d6fb-42cd-8029-1f227f9b3739")
+		(sheetname "/")
+		(sheetfile "KnxBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 3.41 3.41)
+			(end 3.41 1.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "63df8c08-b950-4f56-bccc-f40d47af4326")
+		)
+		(fp_line
+			(start 3.41 -3.41)
+			(end 3.41 -1.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4f4b42e5-f2ab-42ac-ae83-8a6dec896912")
+		)
+		(fp_line
+			(start -2.345563 3.41)
+			(end 3.41 3.41)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "92272874-1dcf-4e45-82ef-0f5d24ffc16b")
+		)
+		(fp_line
+			(start -2.345563 -3.41)
+			(end 3.41 -3.41)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f31419c4-5260-4cca-8276-2f81a018d8c2")
+		)
+		(fp_line
+			(start -3.41 2.345563)
+			(end -2.345563 3.41)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "1639caa0-0b63-415c-9ec5-91ebf371f3c4")
+		)
+		(fp_line
+			(start -3.41 2.345563)
+			(end -3.41 1.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a6c42b23-8da0-40c1-b4fe-f984e04315ed")
+		)
+		(fp_line
+			(start -3.41 -2.345563)
+			(end -2.345563 -3.41)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "68539d15-1fcd-4c2c-9aa0-a5ae7efa60ef")
+		)
+		(fp_line
+			(start -3.41 -2.345563)
+			(end -3.41 -1.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cd7ff659-eb83-4dd6-95d4-0ae9743a5c2c")
+		)
+		(fp_line
+			(start -4.04375 2.24125)
+			(end -4.04375 1.45375)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "87e39cb4-c470-4416-b428-2851f828a063")
+		)
+		(fp_line
+			(start -4.4375 1.8475)
+			(end -3.65 1.8475)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2eaf67e8-689b-4b3e-b175-f5d0b1cb21ad")
+		)
+		(fp_line
+			(start 4.7 1.05)
+			(end 4.7 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ed1ce8c1-efab-411c-a55b-26466a61eb2e")
+		)
+		(fp_line
+			(start 4.7 -1.05)
+			(end 3.55 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "bcd36745-80c5-46d8-9f15-9f4b29dce452")
+		)
+		(fp_line
+			(start 3.55 3.55)
+			(end 3.55 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "313ded37-920e-450e-9e9c-13baaf096a8f")
+		)
+		(fp_line
+			(start 3.55 1.05)
+			(end 4.7 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ae5e1f3c-80e2-450a-b6b3-e7076cd9c497")
+		)
+		(fp_line
+			(start 3.55 -1.05)
+			(end 3.55 -3.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c918aac3-a31d-4adc-b3d6-e6ed13f28885")
+		)
+		(fp_line
+			(start -2.4 3.55)
+			(end 3.55 3.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1ab708df-84ad-4c75-a905-a9b66856a9ae")
+		)
+		(fp_line
+			(start -2.4 -3.55)
+			(end 3.55 -3.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "39efe23c-89b2-4ea1-9403-5665386542c9")
+		)
+		(fp_line
+			(start -3.55 2.4)
+			(end -2.4 3.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c57bc6d9-8ab2-41ce-b62d-0c893a563d79")
+		)
+		(fp_line
+			(start -3.55 2.4)
+			(end -3.55 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a901a39f-d6a4-4b64-8ccf-7b72596cc1b8")
+		)
+		(fp_line
+			(start -3.55 1.05)
+			(end -4.7 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "60d2d877-63e5-4134-ad19-3e3192cfc55f")
+		)
+		(fp_line
+			(start -3.55 -1.05)
+			(end -3.55 -2.4)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "94f3b9ed-ac29-4432-a551-dc80c5ea2d91")
+		)
+		(fp_line
+			(start -3.55 -2.4)
+			(end -2.4 -3.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a709b868-89c0-4156-99d2-0c3b6ef60d09")
+		)
+		(fp_line
+			(start -4.7 1.05)
+			(end -4.7 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "31bab808-5734-41e2-a4d4-df8ed77339ed")
+		)
+		(fp_line
+			(start -4.7 -1.05)
+			(end -3.55 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "7c1194a9-5a5d-44fa-b1f1-5e2ec302ff22")
+		)
+		(fp_line
+			(start 3.3 3.3)
+			(end 3.3 -3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "319c60a7-495e-48c9-97c5-8c1530ede477")
+		)
+		(fp_line
+			(start -2.3 3.3)
+			(end 3.3 3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "8c846f5c-f2db-46d7-86e8-3f90b291d3ad")
+		)
+		(fp_line
+			(start -2.3 -3.3)
+			(end 3.3 -3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "caf5f163-66fe-49c6-96a4-2c850d607bcb")
+		)
+		(fp_line
+			(start -2.389838 1.645)
+			(end -2.389838 1.015)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "bc219a41-afb6-480a-8694-781e61c142c8")
+		)
+		(fp_line
+			(start -2.704838 1.33)
+			(end -2.074838 1.33)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "99f0ac00-80ba-4ae0-aa1c-d0203bd7ab13")
+		)
+		(fp_line
+			(start -3.3 2.3)
+			(end -2.3 3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "43038387-b479-4294-b283-83ba5aa65aa3")
+		)
+		(fp_line
+			(start -3.3 2.3)
+			(end -3.3 -2.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a434209e-4393-48e3-8012-dc8d3966c4fd")
+		)
+		(fp_line
+			(start -3.3 -2.3)
+			(end -2.3 -3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "326a2cea-0756-4b95-be6b-01d490999eba")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.15 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "fc70b242-6e00-4e97-8553-e8ad51b5c344")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "a91cc20d-d6c0-4494-bf14-b63268c1a04d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -2.7 0 180)
+			(size 3.5 1.6)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15625)
+			(net "Net-(IC2-VFILT)")
+			(pintype "passive")
+			(uuid "749bba6f-d44e-4e69-ac3b-ab8fcb1e297d")
+		)
+		(pad "2" smd roundrect
+			(at 2.7 0 180)
+			(size 3.5 1.6)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.15625)
+			(net "GND")
+			(pintype "passive")
+			(uuid "e06f734f-65d9-43bb-a914-ca4255e640f8")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(gr_rect
 		(start 121.125 125.9)
 		(end 156.875 159.65)
@@ -10554,10 +11598,22 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "DBRX"
+	(gr_text "3V3"
 		(at 152.225 141.1 270)
 		(layer "B.SilkS")
 		(uuid "ebe02fb8-8b25-4502-acfc-fc0441ef8046")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "NRST"
+		(at 153.375 135.4 270)
+		(layer "B.SilkS")
+		(uuid "30f94333-f1b8-45ea-a223-c42a81c32ba2")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -10579,7 +11635,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 154.725 135.4 270)
+		(at 154.625 135.4 270)
 		(layer "B.SilkS")
 		(uuid "4b6d1210-0edf-48f3-bf3b-2a905bab9c57")
 		(effects
@@ -10602,32 +11658,8 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "Fabien"
-		(at 123.825 155.8 270)
-		(layer "B.SilkS")
-		(uuid "b5ccb75f-14fc-49f1-b11a-e09588154f04")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.125)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "Proriol"
-		(at 125.325 155.7 270)
-		(layer "B.SilkS")
-		(uuid "5859e4db-b35b-4561-8bc2-b92e28760537")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.125)
-			)
-			(justify mirror)
-		)
-	)
 	(gr_text "12V"
-		(at 129.125 154.7 270)
+		(at 127.125 157.65 270)
 		(layer "B.SilkS")
 		(uuid "068d1f30-7b28-4f02-be25-a451f3f9dcd3")
 		(effects
@@ -12474,6 +13506,14 @@
 		(uuid "fb405bee-ab98-4600-af3b-462f88a3f557")
 	)
 	(segment
+		(start 122.875 149.9)
+		(end 124.375 151.4)
+		(width 0.5)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "1ca27ca0-bd10-464f-9788-f29b5c2fbd09")
+	)
+	(segment
 		(start 139.3 149.64)
 		(end 137.81 149.64)
 		(width 0.3)
@@ -13796,6 +14836,14 @@
 		(uuid "36fdb027-2e82-4d4a-9108-9a3398ada265")
 	)
 	(segment
+		(start 131.725 150)
+		(end 129.825 151.9)
+		(width 0.3)
+		(layer "F.Cu")
+		(net "Net-(IC2-VFILT)")
+		(uuid "3b3ecd77-81b7-44fc-b71e-3b805e769fab")
+	)
+	(segment
 		(start 141.1 147.1)
 		(end 141.1 145.86)
 		(width 0.2)
@@ -13821,7 +14869,7 @@
 	)
 	(segment
 		(start 132.405 149.32)
-		(end 129.825 151.9)
+		(end 131.725 150)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(IC2-VFILT)")
@@ -13842,6 +14890,14 @@
 		(layer "F.Cu")
 		(net "Net-(IC2-VFILT)")
 		(uuid "ec1686bc-96b4-461e-9df3-c62797fb1668")
+	)
+	(via
+		(at 131.725 150)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "Net-(IC2-VFILT)")
+		(uuid "10ccb44c-76ef-4f3d-9dd0-b6b0e67fee85")
 	)
 	(via
 		(at 135.75 146.65)
@@ -13880,6 +14936,14 @@
 		(uuid "5841a3ea-1235-4c01-bd5f-84147f6696db")
 	)
 	(segment
+		(start 131.175 150)
+		(end 129.775 151.4)
+		(width 0.5)
+		(layer "B.Cu")
+		(net "Net-(IC2-VFILT)")
+		(uuid "2bee2135-73c3-4a11-a95f-2a75e7dd7a32")
+	)
+	(segment
 		(start 141.25 147.25)
 		(end 140.25 146.25)
 		(width 0.2)
@@ -13894,6 +14958,14 @@
 		(layer "B.Cu")
 		(net "Net-(IC2-VFILT)")
 		(uuid "af0a3eee-03c2-43b6-b4ee-51cf5a585be1")
+	)
+	(segment
+		(start 131.725 150)
+		(end 131.175 150)
+		(width 0.5)
+		(layer "B.Cu")
+		(net "Net-(IC2-VFILT)")
+		(uuid "bac29a1b-808b-48f1-93d1-a8f715e752f4")
 	)
 	(segment
 		(start 136.15 146.25)
